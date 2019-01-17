@@ -4,12 +4,10 @@
     </div>
     <div class="navbar">
         <ul>
-            <li><a href="home.php">Home</a></li>
-            <li><a href="about-us.php">About Us</a></li>
-            <li><a href="login.php">Login</a></li>
+            <li <?php     if ($current == 'home') {echo 'class="current"';} ?>><a href="home.php">Home</a></li>
+            <li <?php     if ($current == 'about') {echo 'class="current"';} ?>><a href="about-us.php">About Us</a></li>
+            <li <?php     if ($current == 'login') {echo 'class="current"';} ?>><a href="login.php">Login</a></li>
         </ul>
     </div>
-<?php
 
-?>
 </div>
