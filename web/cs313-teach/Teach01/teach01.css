@@ -1,0 +1,22 @@
+div:hover {
+    font-weight: bold;
+}
+
+div {
+    width: 100%;
+}
+
+#one{
+    font-size: 1em;
+    background-color: pink;
+}
+
+#two {
+    font-size: 2em;
+    background-color: blue;
+}
+
+#three {
+    font-size: 3em;
+    background-color: green;
+}
