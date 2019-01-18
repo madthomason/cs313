@@ -25,19 +25,19 @@
     </div>
 </div>
 <div class="main bg-info">
-    <div class="well">
+    <div class="well d-flex flex-row">
         <div>
             <h3>A Few Fun Facts About Madeline Barlocker:</h3>
-            <p>I am from a small town in NE Washington called Chewelah (think 2500 people).
-                I just finished my internship with the Temple Portfolio in the ICS department of the church in Riverton.
-                I was called to serve in the London South mission but having gone on a blind date(set up by his senior
-                project which is a whole other story) the day my papers went in
-                I ended up ditching the mission for a different eternal M with my partner in crime Garrett.
-                I love to cook, and then eat said cooking.
-                This is my last semester of my Software Engineering major which will be followed closely by the addition
-                of
-                a little girl to our family!
-            </p>
+            <ul>
+                <li>I am from a small town in NE Washington called Chewelah (think 2500 people).</li>
+                <li>I just finished my internship with the Temple Portfolio in the ICS department of the church in Riverton.</li>
+                <li> I was called to serve in the London South mission but having gone on a blind date(set up by his senior
+                    project which is a whole other story) the day my papers went in
+                    I ended up ditching the mission for a different eternal M with my partner in crime Garrett.</li>
+                <li>I love to cook, and then eat said cooking.</li>
+                <li>This is my last semester of my Software Engineering major which will be followed closely by the addition
+                    of a little girl to our family!</li>
+            </ul>
         </div>
         <div>
             <img src="media/IMG_5398.png" class="img-rounded" alt="Sand Hill, Lake Powell">
