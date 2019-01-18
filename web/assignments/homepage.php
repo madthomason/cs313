@@ -13,7 +13,7 @@
 <body>
 <div class="header d-flex justify-content-around">
     <h1>About Me!</h1>
-    <div class="d-flex justify-content-around">
+<!--    <div class="d-flex justify-content-around">-->
         <a href="assignments.html"><h2>Assignments</h2></a>
         <div class="countdown">
             <?php
@@ -24,7 +24,7 @@
 
             ?>
         </div>
-    </div>
+<!--    </div>-->
 </div>
 <div class="well d-flex flex-row bg-info row">
     <div class="col">
@@ -44,7 +44,7 @@
             <li>This is my last semester of my Software Engineering major which will be followed closely by the addition
                 of a little girl to our family!
                 <div>
-                    <video id="video" width="320" height="200" preload="auto">
+                    <video id="video" width="320" height="180" preload="auto">
                         <source src="media/IMG_3231.mp4" type="video/mp4">
                         Your Browser doesn't support the video tag
                     </video>
@@ -53,7 +53,7 @@
             </li>
         </ul>
     </div>
-    <div class="col">
+    <div class="col-sm">
         <img src="media/IMG_5398.png" class="img-rounded" alt="Sand Hill, Lake Powell">
         <p class="figure-caption text-center text-wrap">I love the annual Lake Powell trip with my in-laws. A week free
             of cares on the lake with
