@@ -44,7 +44,7 @@
             <li>This is my last semester of my Software Engineering major which will be followed closely by the addition
                 of a little girl to our family!
                 <div>
-                    <video id="video" width="320" height="240" controls>
+                    <video id="video" width="320" height="240">
                         <source src="media/IMG_3231.mp4" type="video/mp4">
                         Your Browser doesn't support the video tag
                     </video>
@@ -64,17 +64,14 @@
 
 
 <script>
-    let video = document.getElementById("video");
-    video.addEventListener("mouseover", playVideo());
-    video.addEventListener("mouseout", pauseVideo());
-
-    function playVideo() {
+    const video = document.getElementById("video");
+    video.addEventListener('mouseover', function (e) {
         video.play();
-    }
+    });
+    video.addEventListener('mouseout', function (e) {
+        video.pause();
+    });
 
-    function pauseVideo() {
-        video.play();
-    }
 </script>
 </body>
 </html>
