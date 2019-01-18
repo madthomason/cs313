@@ -26,8 +26,8 @@
         </div>
     </div>
 </div>
-<div class="well d-flex flex-row bg-info">
-    <div>
+<div class="well d-flex flex-row bg-info row">
+    <div class="col">
         <h3>A Few Fun Facts About Madeline Barlocker:</h3>
         <ul>
             <li>I am from a small town in NE Washington called <a href="https://www.cityofchewelah.org/">Chewelah</a>(think
@@ -44,7 +44,7 @@
             <li>This is my last semester of my Software Engineering major which will be followed closely by the addition
                 of a little girl to our family!
                 <div>
-                    <video id="video" width="320" height="240">
+                    <video id="video" width="320" height="200" preload="auto">
                         <source src="media/IMG_3231.mp4" type="video/mp4">
                         Your Browser doesn't support the video tag
                     </video>
@@ -53,7 +53,7 @@
             </li>
         </ul>
     </div>
-    <div>
+    <div class="col">
         <img src="media/IMG_5398.png" class="img-rounded" alt="Sand Hill, Lake Powell">
         <p class="figure-caption text-center text-wrap">I love the annual Lake Powell trip with my in-laws. A week free
             of cares on the lake with
