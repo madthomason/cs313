@@ -53,7 +53,7 @@
             </li>
         </ul>
     </div>
-    <div class=".col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0">
+    <div class=".col-sm-5 .col-md-6">
         <img src="media/IMG_5398.png" class="img-rounded" alt="Sand Hill, Lake Powell">
         <p class="figure-caption text-center text-wrap">I love the annual Lake Powell trip with my in-laws. A week free
             of cares on the lake with
