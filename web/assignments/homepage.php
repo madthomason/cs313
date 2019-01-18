@@ -11,11 +11,20 @@
 
 </head>
 <body>
-<div class="header">
+<div class="header d-flex flex-row">
     <h1>About Me!</h1>
     <a href="assignments.html"></a>
+    <div class="countdown bg-success">
+        <?php
+        $today = time();
+        $graduation = mktime(0, 0, 0, 4, 12, 2019);
+        $days = ($graduation - $today) / 86400;
+        echo "<h2>$days days until graduation, but who's counting...</h2>";
+
+        ?>
+    </div>
 </div>
-<div class="main">
+<div class="main bg-info">
     <div class="well">
         <div>
             <h3>A Few Fun Facts About Madeline Barlocker:</h3>
@@ -45,15 +54,7 @@
         <p class="text-muted">Hover to play the video</p>
     </div>
 </div>
-<div class="countdown">
-    <?php
-    $today = time();
-    $graduation = mktime(0, 0, 0, 4, 12, 2019);
-    $days = ($graduation - $today) / 86400;
-    echo "<h2>$days days until graduation, but who's counting...</h2>";
 
-    ?>
-</div>
 
 <script>
     let video = document.getElementById("video");
