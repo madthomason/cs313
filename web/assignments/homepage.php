@@ -30,8 +30,8 @@
 
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <div class="card vh-35">
-                <img src="media/IMG_5398.png" class="img-rounded" alt="Sand Hill, Lake Powell">
+            <div class="card vh-50">
+                <img src="media/powell.jpg" class="img-rounded" alt="Sand Hill, Lake Powell">
                 <div class="card-body">
                     <h5 class="card-title">Lake Powell</h5>
                     <p class="card-text">I love the annual Lake Powell trip with my in-laws. A week
@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <div class="card">
+            <div class="card vh-50">
                 <img src="http://mw2.google.com/mw-panoramio/photos/medium/1482110.jpg" class="card-img-top"
                      alt="Chewelah, WA">
                 <div class="card-body">
@@ -53,7 +53,7 @@
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <div class="card">
+            <div class="card vh-50">
                 <img src="media/Wedding-0255.jpg" class="card-img-top"
                      alt="12/27/17">
                 <div class="card-body">
