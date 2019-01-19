@@ -27,7 +27,7 @@
     <!--    </div>-->
 </div>
 <div class="jumbotron d-flex flex-row bg-info row">
-    <div class="col-8 bg-light">
+    <div class="col-6 bg-light m-2">
         <h3>A Few Fun Facts About Madeline Barlocker:</h3>
         <ul>
             <li>I am from a small town in NE Washington called <a href="https://www.cityofchewelah.org/">Chewelah</a>(think
@@ -58,7 +58,7 @@
             </li>
         </ul>
     </div>
-    <div class="col-4 bg-light">
+    <div class="col-4 bg-light m-2">
         <img src="media/IMG_5398.png" class="img-rounded" alt="Sand Hill, Lake Powell">
         <p class="figure-caption text-center text-wrap">I love the annual Lake Powell trip with my in-laws. A week free
             of cares on the lake with
