@@ -30,20 +30,19 @@
         <div class="col-6 bg-secondary">
             <h3>A Few Fun Facts About Madeline Barlocker:</h3>
             <ul>
-                <li class="h4">I am from a small town in NE Washington called <a
-                            href="https://www.cityofchewelah.org/">Chewelah</a>(think
-                    2500 people).
+                <li class="h5">I am from a small town in NE Washington(think
+                    2500 people) called <a href="https://www.cityofchewelah.org/">Chewelah</a>.
                 </li>
-                <li class="h4">I just finished my internship with the Temple Portfolio in the ICS department of the church in
+                <li class="h5">I just finished my internship with the Temple Portfolio in the ICS department of the church in
                     Riverton.
                 </li>
-                <li class="h4"> I was called to serve in the London South mission but having gone on a blind date(set up by his
+                <li class="h5"> I was called to serve in the London South mission but having gone on a blind date(set up by his
                     senior
                     project which is a whole other story) the day my papers went in
                     I ended up ditching the mission for a different eternal M with my partner in crime Garrett.
                 </li>
-                <li class="h4">I love to cook, and then eat said cooking.</li>
-                <li class="h4">
+                <li class="h5">I love to cook, and then eat said cooking.</li>
+                <li class="h5">
                     <div class="d-flex">
                         <p class="text-wrap">This is my last semester of my Software Engineering major which will be followed closely by
                             the
