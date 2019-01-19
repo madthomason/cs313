@@ -46,7 +46,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Home</h5>
                     <p class="card-text">I am from a small town in NE Washington(think
-                        2500 people) called <a href="https://www.cityofchewelah.org/">Chewelah</a></p>
+                        2500 people) called Chewelah.</p>
+                    <a href="https://www.cityofchewelah.org/">Checkout Chewelah!</a>
                 </div>
             </div>
         </div>
