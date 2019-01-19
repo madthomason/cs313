@@ -27,23 +27,23 @@
         <!--    </div>-->
     </div>
     <div class="jumbotron d-flex justify-content-around bg-info row">
-        <div class="col-6 bg-secondary m-2">
+        <div class="col-6 bg-secondary">
             <h3>A Few Fun Facts About Madeline Barlocker:</h3>
             <ul>
-                <li>I am from a small town in NE Washington called <a
+                <li class="h4">I am from a small town in NE Washington called <a
                             href="https://www.cityofchewelah.org/">Chewelah</a>(think
                     2500 people).
                 </li>
-                <li>I just finished my internship with the Temple Portfolio in the ICS department of the church in
+                <li class="h4">I just finished my internship with the Temple Portfolio in the ICS department of the church in
                     Riverton.
                 </li>
-                <li> I was called to serve in the London South mission but having gone on a blind date(set up by his
+                <li class="h4"> I was called to serve in the London South mission but having gone on a blind date(set up by his
                     senior
                     project which is a whole other story) the day my papers went in
                     I ended up ditching the mission for a different eternal M with my partner in crime Garrett.
                 </li>
-                <li>I love to cook, and then eat said cooking.</li>
-                <li>
+                <li class="h4">I love to cook, and then eat said cooking.</li>
+                <li class="h4">
                     <div class="d-flex">
                         <p class="text-wrap">This is my last semester of my Software Engineering major which will be followed closely by
                             the
@@ -61,7 +61,7 @@
                 </li>
             </ul>
         </div>
-        <div class="jumbotron col-4 bg-secondary m-2 p-1">
+        <div class="jumbotron col-4 bg-secondary p-2">
             <img src="media/IMG_5398.png" class="img-rounded" alt="Sand Hill, Lake Powell">
             <p class="font-italic text-center text-wrap">I love the annual Lake Powell trip with my in-laws. A week
                 free
