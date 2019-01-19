@@ -30,7 +30,7 @@
     <h3>A Few Fun Facts About Madeline Barlocker:</h3>
 
     <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
             <div class="card">
                 <img src="media/IMG_5398.png" class="img-rounded" alt="Sand Hill, Lake Powell">
                 <div class="card-body">
@@ -83,6 +83,7 @@
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
             <div class="card">
+                <img src="media/food.jpg" class="card-img-top" alt="Pregnancy Announcement 10/18">
                 <div class="card-body">
                     <h5 class="card-title">My true passion</h5>
                     <p class="card-text">I love to cook, and then eat said cooking.</p>
