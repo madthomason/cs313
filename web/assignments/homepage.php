@@ -28,7 +28,7 @@
 </div>
     <h3>A Few Fun Facts About Madeline Barlocker:</h3>
 
-    <div class="row">
+    <div class="row w-100 m-0">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 p-1">
             <div class="card h-100">
                 <img src="media/IMG_5398.png" class="card-img-top" alt="Sand Hill, Lake Powell">
@@ -66,7 +66,7 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 p-1">
-            <div class="card">
+            <div class="card h-100">
                 <img src="https://render.fineartamerica.com/images/rendered/search/print/images/artworkimages/medium/1/oquirrh-mountain-temple-sunset-john-wunderli.jpg"
                      class="card-img-top"
                      alt="Oquirr Mountain Temple, South Jordan">
@@ -75,13 +75,12 @@
                     <p class="card-text">I just finished my internship with the Temple Portfolio in the ICS
                         department of the church in Riverton.</p>
                     <a href="https://www.linkedin.com/in/madeline-barlocker-03484b149"
-                       class="btn btn-primary">LinkedIn</a>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 p-1">
-            <div class="card">
+            <div class="card h-100">
                 <img src="media/food.jpg" class="card-img-top" alt="Pregnancy Announcement 10/18">
                 <div class="card-body">
                     <h5 class="card-title">My true passion</h5>
@@ -90,8 +89,8 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 p-1">
-            <div class="card">
-                <video class="card-img-top" id="video" width="500" height="282" preload="auto">
+            <div class="card h-100">
+                <video class="card-img-top p-1" id="video" width="500" height="282" preload="auto">
                     <source src="media/IMG_3231.mp4" type="video/mp4">
                     Your Browser doesn't support the video tag
                 </video>
