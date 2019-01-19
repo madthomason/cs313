@@ -26,12 +26,11 @@
     </div>
     <!--    </div>-->
 </div>
-<div class="jumbotron">
     <h3>A Few Fun Facts About Madeline Barlocker:</h3>
 
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <div class="card">
+            <div class="card vh-35">
                 <img src="media/IMG_5398.png" class="img-rounded" alt="Sand Hill, Lake Powell">
                 <div class="card-body">
                     <h5 class="card-title">Lake Powell</h5>
@@ -105,7 +104,6 @@
             </div>
         </div>
     </div>
-</div>
 
 <script>
     const video = document.getElementById("video");
