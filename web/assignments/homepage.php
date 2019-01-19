@@ -74,7 +74,6 @@
                     <h5 class="card-title">Temple Portfolio Internship</h5>
                     <p class="card-text">I just finished my internship with the Temple Portfolio in the ICS
                         department of the church in Riverton.</p>
-                    <a href="https://www.linkedin.com/in/madeline-barlocker-03484b149"
                 </div>
             </div>
         </div>
