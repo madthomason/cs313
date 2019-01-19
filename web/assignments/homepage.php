@@ -57,6 +57,7 @@
                 <img src="media/Wedding-0255.jpg" class="card-img-top"
                      alt="12/27/17">
                 <div class="card-body">
+                    <h5 class="card-title">M...</h5>
                     <p class="card-text">I was called to serve in the London South mission but having gone on a
                         blind date(set up by his
                         senior project which is a whole other story) the day my papers went in
@@ -94,8 +95,8 @@
                     Your Browser doesn't support the video tag
                 </video>
                 <div class="card-body">
-                    <p class="font-italic text-center card-text">Hover to play the video</p>
                     <h5 class="card-title">Endings and New Beginnings</h5>
+                    <p class="font-italic card-text">Hover to play the video</p>
                     <p class="card-text">This is my last semester of my Software Engineering major which will be
                         followed closely by the addition of a little girl to our family!</p>
                 </div>
