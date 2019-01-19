@@ -10,24 +10,24 @@
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
 </head>
-<body>
-<div class="header d-flex justify-content-around">
+<body class="bg-light">
+<div class="jumbotron bg-secondary d-flex justify-content-around">
     <h1>About Me!</h1>
-<!--    <div class="d-flex justify-content-around">-->
-        <a href="assignments.html"><h2>Assignments</h2></a>
-        <div class="countdown">
-            <?php
-            $today = time();
-            $graduation = mktime(0, 0, 0, 4, 12, 2019);
-            $days = floor(($graduation - $today) / 86400);
-            echo "<h2>$days days until graduation, but who's counting...</h2>";
+    <!--    <div class="d-flex justify-content-around">-->
+    <a href="assignments.html"><h2>Assignments</h2></a>
+    <div class="countdown">
+        <?php
+        $today = time();
+        $graduation = mktime(0, 0, 0, 4, 12, 2019);
+        $days = floor(($graduation - $today) / 86400);
+        echo "<h2>$days days until graduation, but who's counting...</h2>";
 
-            ?>
-        </div>
-<!--    </div>-->
+        ?>
+    </div>
+    <!--    </div>-->
 </div>
-<div class="jumbotron well d-flex flex-row bg-info row">
-    <div class="col-sm-5 col-md-6">
+<div class="jumbotron d-flex flex-row bg-info row">
+    <div class="col-8 bg-light">
         <h3>A Few Fun Facts About Madeline Barlocker:</h3>
         <ul>
             <li>I am from a small town in NE Washington called <a href="https://www.cityofchewelah.org/">Chewelah</a>(think
@@ -41,19 +41,24 @@
                 I ended up ditching the mission for a different eternal M with my partner in crime Garrett.
             </li>
             <li>I love to cook, and then eat said cooking.</li>
-            <li>This is my last semester of my Software Engineering major which will be followed closely by the addition
-                of a little girl to our family!
-                <div>
-                    <video id="video" width="320" height="180" preload="auto">
-                        <source src="media/IMG_3231.mp4" type="video/mp4">
-                        Your Browser doesn't support the video tag
-                    </video>
-                    <p class="text-muted">Hover to play the video</p>
+            <li>
+                <div class="d-flex">
+                    <p>This is my last semester of my Software Engineering major which will be followed closely by the
+                        addition of a little girl to our family!
+                    </p>
+
+                    <div>
+                        <video id="video" width="320" height="180" preload="auto">
+                            <source src="media/IMG_3231.mp4" type="video/mp4">
+                            Your Browser doesn't support the video tag
+                        </video>
+                        <p class="text-muted">Hover to play the video</p>
+                    </div>
                 </div>
             </li>
         </ul>
     </div>
-    <div class="col-sm-5 col-md-6">
+    <div class="col-4 bg-light">
         <img src="media/IMG_5398.png" class="img-rounded" alt="Sand Hill, Lake Powell">
         <p class="figure-caption text-center text-wrap">I love the annual Lake Powell trip with my in-laws. A week free
             of cares on the lake with
