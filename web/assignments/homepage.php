@@ -42,9 +42,9 @@
                     I ended up ditching the mission for a different eternal M with my partner in crime Garrett.
                 </li>
                 <li class="h5">I love to cook, and then eat said cooking.</li>
-                <li class="h5">
+                <li>
                     <div class="d-flex">
-                        <p class="text-wrap">This is my last semester of my Software Engineering major which will be followed closely by
+                        <p class="text-wrap h5">This is my last semester of my Software Engineering major which will be followed closely by
                             the
                             addition of a little girl to our family!
                         </p>
