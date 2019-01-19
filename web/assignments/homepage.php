@@ -11,7 +11,7 @@
 
 </head>
 <body class="bg-info">
-<div class="jumbotron bg-secondary d-flex justify-content-around">
+<div class="jumbotron d-flex justify-content-around m-3 p-3">
     <h1>About Me!</h1>
     <!--    <div class="d-flex justify-content-around">-->
     <a href="assignments.html"><h2>Assignments</h2></a>
@@ -26,9 +26,9 @@
     </div>
     <!--    </div>-->
 </div>
-    <h3>A Few Fun Facts About Madeline Barlocker:</h3>
+    <h3 class="text-center">A Few Fun Facts About Madeline Barlocker:</h3>
 
-    <div class="row w-100 m-0">
+    <div class="row w-100 m-0 p-3">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 p-1">
             <div class="card h-100">
                 <img src="media/IMG_5398.png" class="card-img-top" alt="Sand Hill, Lake Powell">
