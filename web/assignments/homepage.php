@@ -11,7 +11,6 @@
 
 </head>
 <body class="bg-light">
-<div class="container">
     <div class="jumbotron bg-secondary d-flex justify-content-around">
         <h1>About Me!</h1>
         <!--    <div class="d-flex justify-content-around">-->
@@ -46,7 +45,7 @@
                 <li>I love to cook, and then eat said cooking.</li>
                 <li>
                     <div class="d-flex">
-                        <p>This is my last semester of my Software Engineering major which will be followed closely by
+                        <p class="text-wrap">This is my last semester of my Software Engineering major which will be followed closely by
                             the
                             addition of a little girl to our family!
                         </p>
@@ -56,7 +55,7 @@
                                 <source src="media/IMG_3231.mp4" type="video/mp4">
                                 Your Browser doesn't support the video tag
                             </video>
-                            <p class="text-muted">Hover to play the video</p>
+                            <p class="font-italic text-center">Hover to play the video</p>
                         </div>
                     </div>
                 </li>
@@ -64,15 +63,13 @@
         </div>
         <div class="jumbotron col-4 bg-secondary m-2 p-1">
             <img src="media/IMG_5398.png" class="img-rounded" alt="Sand Hill, Lake Powell">
-            <p class="figure-caption text-center text-wrap">I love the annual Lake Powell trip with my in-laws. A week
+            <p class="font-italic text-center text-wrap">I love the annual Lake Powell trip with my in-laws. A week
                 free
                 of cares on the lake with
                 family,
                 nothing better.</p>
         </div>
     </div>
-
-</div>
 <script>
     const video = document.getElementById("video");
     video.addEventListener('mouseover', function (e) {
