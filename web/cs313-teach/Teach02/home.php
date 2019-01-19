@@ -1,3 +1,6 @@
+<?php
+require 'session.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +10,26 @@
 </head>
 <body>
 <?php
-$current = 'home';
+//$current = 'home';
 include 'header.php';
 ?>
 
 <div>
-    <p>Welcome. You are not logged in</p>
-</div>
-<?php
+    <?php
+        switch ($_SESSION['user']) {
+        case 'admin':
+            echo "<p>Welcome Admin</p>";
+            break;
+        case 'tester':
+            echo "<p>Welcome Tester</p>";
+            break;
+        default:
+            echo "<p>Welcome. You are not logged in</p>";
+            break;
+        }
+    ?>
 
-?>
+</div>
+
 </body>
 </html>

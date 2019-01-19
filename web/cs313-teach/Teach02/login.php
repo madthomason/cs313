@@ -1,3 +1,6 @@
+<?php
+require 'session.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +10,18 @@
 </head>
 <body>
 <?php
-$current = 'login';
+//$current = 'login';
 include 'header.php';
 ?>
+<a href="session.php?user=admin">Login as Admin</a>
+<a href="session.php?user=tester">Login as Tester</a>
+<!--<button class="admin" onclick="--><?php //$_SESSION['user'] = 'admin';?><!--">Login as Admin</button>-->
+<!--<button class="tester" onclick="--><?php //$_SESSION['user'] = 'tester';?><!--">Login as Tester</button>-->
 
-<button>Login as Admin</button>
-<button>Login as Tester</button>
 
+<script>
+    $('')
+    
+</script>
 </body>
 </html>

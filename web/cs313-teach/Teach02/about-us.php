@@ -1,3 +1,6 @@
+<?php
+require 'session.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,7 @@
 </head>
 <body>
 <?php
-$current = 'about';
+//$current = 'about';
 include 'header.php';
 ?>
 <div>
