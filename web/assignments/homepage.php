@@ -89,7 +89,7 @@
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 p-1">
             <div class="card h-100">
-                <video class="card-img-top p-1" id="video" width="500" height="282" preload="auto">
+                <video class="card-img-top" id="video" preload="auto">
                     <source src="media/IMG_3231.mp4" type="video/mp4">
                     Your Browser doesn't support the video tag
                 </video>
