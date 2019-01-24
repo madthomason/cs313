@@ -6,21 +6,19 @@ require 'header.php';
 
 <div class="row w-100 m-0 p-3">
     <?php
-
      foreach ($titles as $x => $title) {
-         $button_class = "btn bg-primary";
-
          if (in_array($x, $_SESSION["cartItems"])) {
-             $button_class .= " disabled";
+             $quantity = count(array_filter($_SESSION["cartItems"], function($a, $x) {return $a==$x;}));
          }
          echo '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
                     <div class="card h-100">
                         <img src="' . $images[$x] . '" class="card-img-top">
                         <div class="d-flex justify-content-around card-body">
                             <h5 class="card-title">' . $title . '</h5>
-                            <a class="' . $button_class . '" href="add_items.php?id=' . $x . '">
+                            <a class="btn bg-primary" href="add_items.php?id=' . $x . '">
                                 <i class="fas fa-cart-plus"></i>
                             </a>
+                            <h1>Quantity: ' . $quantity . '</h1>
                         </div>
                     </div>
                 </div>';

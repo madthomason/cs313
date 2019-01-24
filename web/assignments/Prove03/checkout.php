@@ -78,7 +78,7 @@ require 'header.php';
     </div>
     <div class="form-group">
         <label for="zip">Zipcode</label>
-        <input type="text" class="form-control" id="zip" name="zip">
+        <input type="number" class="form-control" id="zip" name="zip" maxlength="5">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

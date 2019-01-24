@@ -2,9 +2,20 @@
 require 'items.php';
 require 'header.php';
 
+$name = htmlspecialchars($_POST["name"]);
 
 
-echo '';
+
+echo '<address class="vcard">
+  <span class="adr">
+  <span class="name">' . $name . '</span>
+    <span class="address">' . $name . '</span>
+    <span class="city">' . $name . '</span>,  
+    <abbr class="state" title="California">CA</abbr>&nbsp;&nbsp;
+    <span class="zip">' . $name . '</span>
+    <span class="email">' . $name . '</span>
+  </span>
+</address>';
 
 ?>
 

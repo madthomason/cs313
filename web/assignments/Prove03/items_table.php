@@ -10,11 +10,14 @@
         </thead>
         <tbody>
         <?php
+
+            //session_start();
+
             foreach ($_SESSION["cart_items"] as $x) {
                 echo '<tr>
             <td data-th="Product">
                 <div class="row">
-                    <div class="col-sm-2 hidden-xs"><img src="$images[$x]" class="img-responsive" /></div>
+                    <div class="col-sm-2 hidden-xs"><img src="' . $images[$x] . '" class="img-responsive" /></div>
                     <div class="col-sm-10">
                         <h4 class="nomargin">' . $titles[$x] . '</h4>
                     </div>
@@ -23,8 +26,9 @@
             <td data-th="Price">Free!</td>
             <td data-th="Subtotal" class="text-center">Free</td>
             <td class="actions" data-th="">
-                <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+                <a class="btn bg-secondary" href="remove_items.php?id=' . $x . '">
+                    <i class="fa fa-trash-o"></i>
+                </a>
             </td>
         </tr>';
             }
