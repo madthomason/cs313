@@ -5,7 +5,9 @@
  * Date: 1/23/2019
  * Time: 5:08 PM
  */
-
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
 echo '<!DOCTYPE html>
 <html lang="en">
 <head>
