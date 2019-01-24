@@ -6,14 +6,10 @@ require 'header.php';
 
 <div class="row w-100 m-0 p-3">
     <?php
-        if ($_SESSION["cartItems"]) {
-            echo '<h1>Cart Items: ' . $_SESSION["cartItems"] . '</h1>';
-        }
 
      foreach ($titles as $x => $title) {
          $button_class = "btn bg-primary";
 
-         echo "<h1>$x</h1>";
          if (in_array($x, $_SESSION["cartItems"])) {
              $button_class .= " disabled";
          }
