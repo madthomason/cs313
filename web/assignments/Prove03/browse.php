@@ -10,9 +10,6 @@ require 'header.php';
     if (session_status() !== PHP_SESSION_ACTIVE) {
         session_start();
     }
-
-
-        echo '<h1>$_SESSION</h1>';
         if ($_SESSION["cartItems"]) {
             echo '<h1>Cart Items: ' . $_SESSION["cartItems"] . '</h1>';
         }
@@ -20,6 +17,7 @@ require 'header.php';
      foreach ($titles as $x => $title) {
          $button_class = "btn bg-primary";
          if (in_array($x, $_SESSION["cartItems"])) {
+             echo "<h1>$x</h1>";
              $button_class .= " disabled";
          }
          echo '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
