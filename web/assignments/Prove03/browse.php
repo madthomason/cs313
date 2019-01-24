@@ -7,12 +7,15 @@ require 'header.php';
 <div class="row w-100 m-0 p-3">
     <?php
 
-//    if (session_status() == PHP_SESSION_NONE) {
-//        echo "<h1>no session!</h1>";
-//    }
-    if ($_SESSION["cartItems"]) {
-        echo '<h1>Cart Items: ' . $_SESSION["cartItems"] . '</h1>';
+    if (session_status() == PHP_SESSION_NONE) {
+        echo "<h1>no session!</h1>";
+    } else {
+        echo '<h1>$_SESSION</h1>';
+        if ($_SESSION["cartItems"]) {
+            echo '<h1>Cart Items: ' . $_SESSION["cartItems"] . '</h1>';
+        }
     }
+
      foreach ($titles as $x => $title) {
          $button_class = "btn bg-primary";
          if (in_array($x, $_SESSION["cartItems"])) {
