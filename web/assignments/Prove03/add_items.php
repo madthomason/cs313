@@ -20,7 +20,7 @@ if ($_GET["id"]) {
     } else {
         $_SESSION["cartItems"] =  $_GET["id"];
     }
-    
+
 }
 
 
