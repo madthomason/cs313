@@ -10,7 +10,7 @@ require 'header.php';
 //    if (session_status() == PHP_SESSION_NONE) {
 //        echo "<h1>no session!</h1>";
 //    }
-    if ($_SESSION["cart_items"]) {
+    if ($_SESSION["cartItems"]) {
         echo '<h1>Cart Items: ' . $_SESSION["cartItems"] . '</h1>';
     }
      foreach ($titles as $x => $title) {
@@ -23,7 +23,7 @@ require 'header.php';
                         <img src="' . $images[$x] . '" class="card-img-top">
                         <div class="d-flex justify-content-around card-body">
                             <h5 class="card-title">' . $title . '</h5>
-                            <a class="btn bg-primary" href="add_items.php?id=' . $x . '">
+                            <a class="' . $button_class . '" href="add_items.php?id=' . $x . '">
                                 <i class="fas fa-cart-plus"></i>
                             </a>
                         </div>
