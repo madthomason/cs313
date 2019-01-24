@@ -14,7 +14,7 @@ if (!isset($_SESSION["cartItems"])) {
     $_SESSION["cartItems"] = array();
 }
 
-if ($_GET["id"]) {
+if (isset($_GET["id"])) {
     if (!empty($_SESSION["cartItems"])) {
         $_SESSION["cartItems"] .= ", " . $_GET["id"];
     } else {
@@ -22,6 +22,5 @@ if ($_GET["id"]) {
     }
 
 }
-
 
 header("Location: browse.php");

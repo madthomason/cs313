@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4aea913b-19c4-44bf-94f4-65b95af4d12b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assignments/Prove03/browse.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Prove03/browse.php" afterDir="false" />
-    </list>
+    <list default="true" id="4aea913b-19c4-44bf-94f4-65b95af4d12b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,20 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignments/Prove03/browse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="170">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/Prove03/add_items.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="374">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -102,8 +100,8 @@
         <option value="$PROJECT_DIR$/assignments/Prove03/shopping_cart.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/confirmation.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/items.php" />
-        <option value="$PROJECT_DIR$/assignments/Prove03/add_items.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/browse.php" />
+        <option value="$PROJECT_DIR$/assignments/Prove03/add_items.php" />
       </list>
     </option>
   </component>
@@ -135,30 +133,7 @@
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="assignments" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assignments" type="462c0819:PsiDirectoryNode" />
               <item name="Prove03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="cs313-teach" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="cs313-teach" type="462c0819:PsiDirectoryNode" />
-              <item name="Teach02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="cs313-teach" type="462c0819:PsiDirectoryNode" />
-              <item name="Teach03" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -210,12 +185,12 @@
       <updated>1547674559356</updated>
       <workItem from="1547674561984" duration="2542000" />
       <workItem from="1547864704557" duration="15324000" />
-      <workItem from="1548202580174" duration="12567000" />
+      <workItem from="1548202580174" duration="12840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41325000" />
+    <option name="totallyTimeSpent" value="41598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -349,17 +324,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignments/Prove03/add_items.php">
+    <entry file="file://$PROJECT_DIR$/assignments/Prove03/browse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="170">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignments/Prove03/browse.php">
+    <entry file="file://$PROJECT_DIR$/assignments/Prove03/add_items.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        <state relative-caret-position="374">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
