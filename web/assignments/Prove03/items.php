@@ -10,9 +10,8 @@ $images = array("1" => "https://3.bp.blogspot.com/-FtQf0dA9jt8/Vw7Lf9emr6I/AAAAA
     "9" => "https://meteorologyman.files.wordpress.com/2014/01/snowgrains.jpg",
     "10" => "http://mediad.publicbroadcasting.net/p/wunc/files/styles/x_large/public/201602/Sleet_on_the_ground.jpg",
     "11" => "http://www.kzncogta.gov.za/wp-content/uploads/2017/12/hail-12.jpg",
-    "12" => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4P7JRwLYGAdfnerV9RO6J0fSpOKPw3bqPuRYfvIGF4_lAWNwu6w",
-    "13" => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVsgF7H4tPZDHvDtZ-w8Z1IVaA5HKKWtbSdk1jBcvjbZroLK2Rww");
+    "12" => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4P7JRwLYGAdfnerV9RO6J0fSpOKPw3bqPuRYfvIGF4_lAWNwu6w");
 $titles = array("1" => "Drizzle", "2" => "Rain", "3" => "Cloudburst", "4" => "Sunshower", "5" => "Freezing Drizzle",
     "6" => "Freezing Rain", "7" => "Slush", "8" => "Snow", "9" => "Snow Grains", "10" => "Sleet",
-    "11" => "Hail", "12" => "Graupel", "13" => "Ice Crystals");
+    "11" => "Hail", "12" => "Graupel");
 ?>

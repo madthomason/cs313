@@ -10,7 +10,7 @@ require 'header.php';
          echo '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
                     <div class="card h-100">
                         <img src="' . $images[$x] . '" class="card-img-top">
-                        <div class="card-body">
+                        <div class="d-flex justify-content-around card-body">
                             <h5 class="card-title">' . $title . '</h5>
                             <a class="btn bg-primary" href="add_items.php">
                                 <i class="fas fa-cart-plus"></i>
@@ -20,8 +20,6 @@ require 'header.php';
                 </div>';
      }
     ?>
-   
-
 
 </div>
 
