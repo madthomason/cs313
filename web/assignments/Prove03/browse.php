@@ -5,6 +5,8 @@ require 'header.php';
 
 <div class="row w-100 m-0 p-3">
     <?php
+
+    echo "<h3>$titles[1]</h3>";
      foreach ($titles as $x => $title) {
          $quantity = 0;
          if (in_array($x, $_SESSION["cartItems"])) {
