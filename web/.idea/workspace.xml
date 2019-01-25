@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aea913b-19c4-44bf-94f4-65b95af4d12b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/assignments/Prove03/add_items.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Prove03/add_items.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/Prove03/browse.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Prove03/browse.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -15,20 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignments/Prove03/browse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+            <state relative-caret-position="170">
+              <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/Prove03/add_items.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="255">
+              <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -126,11 +127,11 @@
         <option value="$PROJECT_DIR$/assignments/Prove03/remove_items.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/shopping_cart.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/items_table.php" />
-        <option value="$PROJECT_DIR$/assignments/Prove03/add_items.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/header.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/confirmation.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/checkout.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/browse.php" />
+        <option value="$PROJECT_DIR$/assignments/Prove03/add_items.php" />
       </list>
     </option>
   </component>
@@ -214,12 +215,12 @@
       <updated>1547674559356</updated>
       <workItem from="1547674561984" duration="2542000" />
       <workItem from="1547864704557" duration="15324000" />
-      <workItem from="1548202580174" duration="24314000" />
+      <workItem from="1548202580174" duration="24623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53072000" />
+    <option name="totallyTimeSpent" value="53381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -359,17 +360,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignments/Prove03/add_items.php">
+    <entry file="file://$PROJECT_DIR$/assignments/Prove03/browse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="170">
+          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignments/Prove03/browse.php">
+    <entry file="file://$PROJECT_DIR$/assignments/Prove03/add_items.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        <state relative-caret-position="255">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
         </state>
       </provider>
     </entry>
