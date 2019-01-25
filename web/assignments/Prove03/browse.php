@@ -7,7 +7,7 @@ require 'header.php';
     <?php
      foreach ($titles as $x => $title) {
          $quantity = 0;
-         echo "<h3>$x</h3>";
+         echo '<h3>' . $_SESSION["cartItems"] . '</h3>';
          if (in_array($x, $_SESSION["cartItems"])) {
              $quantity = count(array_filter($_SESSION["cartItems"], function($a, $x) {return $a==$x;}));
          }
