@@ -6,6 +6,7 @@ require 'header.php';
 <div class="row w-100 m-0 p-3">
     <?php
      foreach ($titles as $x => $title) {
+         $quantity = 0;
          if (in_array($x, $_SESSION["cartItems"])) {
              $quantity = count(array_filter($_SESSION["cartItems"], function($a, $x) {return $a==$x;}));
          }
@@ -17,7 +18,7 @@ require 'header.php';
                             <a class="btn bg-primary" href="add_items.php?id=' . $x . '">
                                 <i class="fas fa-cart-plus"></i>
                             </a>
-                            <h1>Quantity: ' . $quantity . '</h1>
+                            <h5>Quantity: ' . $quantity . '</h5>
                         </div>
                     </div>
                 </div>';
