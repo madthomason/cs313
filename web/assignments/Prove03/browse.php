@@ -1,5 +1,4 @@
 <?php
-require 'items.php';
 require 'header.php';
 ?>
 <h3 class="text-center">We currently are having a shortage of clear skies, but there is plenty precipitations available!</h3>

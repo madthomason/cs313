@@ -1,5 +1,4 @@
 <?php
-require 'items.php';
 require 'header.php';
 ?>
 
@@ -85,11 +84,4 @@ require 'header.php';
 </body>
 </html>
 
-<?php
-/**
- * Created by PhpStorm.
- * User: Madeline Barlocker
- * Date: 1/23/2019
- * Time: 5:10 PM
- */
 

@@ -1,7 +1,7 @@
 <table id="cart" class="table table-hover table-condensed">
         <thead>
         <tr>
-            <th style="width:50%">Product</th>
+            <th class="w-50">Product</th>
             <th style="width:10%">Price</th>
             <th style="width:8%">Quantity</th>
             <th style="width:22%" class="text-center">Subtotal</th>
@@ -24,13 +24,15 @@
                 </div>
             </td>
             <td data-th="Price">Free!</td>
-            <td data-th="Subtotal" class="text-center">Free</td>
-            <td class="actions" data-th="">
+            <td data-th="Subtotal" class="text-center">Free</td>';
+                if ($remove == true) {
+                    echo '<td class="actions">
                 <a class="btn bg-secondary" href="remove_items.php?id=' . $x . '">
                     <i class="fa fa-trash-o"></i>
                 </a>
-            </td>
-        </tr>';
+            </td>';
+                }
             }
         ?>
+        </tr>
         </tbody>

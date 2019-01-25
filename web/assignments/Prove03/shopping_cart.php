@@ -4,6 +4,7 @@ require 'header.php';
 
 <div class="container">
     <?php
+    $remove = true;
     include 'items_table.php';
     ?>
         <tfoot>
