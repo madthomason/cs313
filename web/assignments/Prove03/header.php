@@ -27,7 +27,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 </head>
 <body class="bg-info">
 <div class="jumbotron d-flex justify-content-around m-3 p-3">
-    <h1>What weather can you afford?</h1>
+    <a href="browse.php" class="nav-link text-dark"><h1>What weather can you afford?</h1></a>
     <a href="shopping_cart.php" class="btn btn-info btn-lg">
         <i class="fas fa-shopping-cart"></i> Shopping Cart
     </a>

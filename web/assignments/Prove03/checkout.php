@@ -21,7 +21,7 @@ require 'header.php';
     </div>
     <div class="form-group">
         <label for="state">State</label>
-        <select id="state">
+        <select id="state" name="state">
             <option name="state" value="AL">Alabama</option>
             <option name="state" value="AK">Alaska</option>
             <option name="state" value="AZ">Arizona</option>

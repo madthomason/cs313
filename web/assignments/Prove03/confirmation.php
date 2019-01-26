@@ -1,34 +1,25 @@
 <?php
 require 'header.php';
 
-echo '<div class="confirm_address">
+echo '<div class="confirm_address p-3 m-3">
     <address class="vcard">
     <span class="adr">
-    <h4 class="name">' . htmlspecialchars($_POST["name"]) . '</h4>
-    <span class="address">' . htmlspecialchars($_POST["address"]) . '</span>
+    <h4 class="name">' . htmlspecialchars($_POST["name"]) . '</h4><br>
+    <span class="address">' . htmlspecialchars($_POST["address"]) . '</span><br>
     <span class="city">' . htmlspecialchars($_POST["city"]) . '</span>,  
     <abbr class="state">' . htmlspecialchars($_POST["state"]) . '</abbr>
-    <span class="zip">' . htmlspecialchars($_POST["zip"]) . '</span>
+    <span class="zip">' . htmlspecialchars($_POST["zip"]) . '</span><br>
     <email class="email">' . htmlspecialchars($_POST["email"]) . '</email>
   </span>
 </address>
-</div>';
+</div>
+<div class="container">';
 $remove = false;
 include 'items_table.php';
 ?>
-    <tfoot>
-    <tr class="visible-xs">
-        <td class="text-center"><strong>Total Free</strong></td>
-    </tr>
-    <tr>
-        <td><a href="browse.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
-        <td colspan="2" class="hidden-xs"></td>
-        <td class="hidden-xs text-center"><strong>Total Free</strong></td>
-        <td><a href="checkout.php" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
-    </tr>
-    </tfoot>
-    </table>
 
+    </table>
+</div>
     </body>
     </html>
 <?php

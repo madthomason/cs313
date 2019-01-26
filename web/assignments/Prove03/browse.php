@@ -5,13 +5,6 @@ require 'header.php';
 
 <div class="row w-100 m-0 p-3">
     <?php
-    if (isset($_SESSION["cartItems"])) {
-        $keys = join(", ", array_keys($_SESSION["cartItems"]));
-        echo "$keys";
-        foreach ($_SESSION["cartItems"] as $key => $value) {
-            echo "Key: $key; Value: $value\n";
-        }
-    }
      foreach ($titles as $x => $title) {
          $quantity = 0;
          if (isset($_SESSION["cartItems"])) {
