@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aea913b-19c4-44bf-94f4-65b95af4d12b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assignments/Prove03/add_items.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Prove03/add_items.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/Prove03/browse.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Prove03/browse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/Prove03/remove_items.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Prove03/remove_items.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/Prove03/browse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="187">
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -116,8 +114,8 @@
         <option value="$PROJECT_DIR$/assignments/general.css" />
         <option value="$PROJECT_DIR$/assignments/Prove03/items_table.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/add_items.php" />
-        <option value="$PROJECT_DIR$/assignments/Prove03/browse.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/remove_items.php" />
+        <option value="$PROJECT_DIR$/assignments/Prove03/browse.php" />
       </list>
     </option>
   </component>
@@ -201,12 +199,12 @@
       <updated>1547674559356</updated>
       <workItem from="1547674561984" duration="2542000" />
       <workItem from="1547864704557" duration="15324000" />
-      <workItem from="1548202580174" duration="32648000" />
+      <workItem from="1548202580174" duration="33017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61406000" />
+    <option name="totallyTimeSpent" value="61775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -349,8 +347,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignments/Prove03/browse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="187">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>

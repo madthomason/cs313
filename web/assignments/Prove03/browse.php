@@ -5,6 +5,9 @@ require 'header.php';
 
 <div class="row w-100 m-0 p-3">
     <?php
+    if (isset($_SESSION["cartItems"])) {
+        echo '<h3>' . join(', ', $_SESSION["cartItems"]) . '</h3>';
+    }
      foreach ($titles as $x => $title) {
          $quantity = 0;
          if (isset($_SESSION["cartItems"])) {
