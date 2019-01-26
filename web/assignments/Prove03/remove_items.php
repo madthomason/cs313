@@ -1,7 +1,5 @@
 <?php
-if (!isset($_SESSION["cartItems"])) {
-    $_SESSION["cartItems"] = array();
-}
+
 
 if (isset($_GET["id"])) {
     if (!empty($_SESSION["cartItems"])) {
