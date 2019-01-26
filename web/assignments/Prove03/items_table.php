@@ -1,11 +1,11 @@
 <table id="cart" class="table table-hover table-condensed">
         <thead>
         <tr>
-            <th style="width:50%">Product</th>
-            <th style="width:10%">Price</th>
-            <th style="width:8%">Quantity</th>
-            <th style="width:22%" class="text-center">Subtotal</th>
-            <th style="width:10%"></th>
+            <th class="w-50">Product</th>
+            <th class="w-10">Price</th>
+            <th class="quantity">Quantity</th>
+            <th class="text-center subtotal">Subtotal</th>
+            <th class="w-10"></th>
         </tr>
         </thead>
         <tbody>
@@ -29,8 +29,8 @@
             <td data-th="Subtotal" class="text-center">Free</td>';
                 if ($remove == true) {
                     echo '<td class="actions">
-                <a class="btn bg-secondary" href="remove_items.php?id=' . $x . '">
-                    <i class="fa fa-trash-o"></i>
+                <a class="btn bg-light" href="remove_items.php?id=' . $x . '">
+                    <i class="far fa-trash-alt"></i>
                 </a>
             </td>';
                 }
