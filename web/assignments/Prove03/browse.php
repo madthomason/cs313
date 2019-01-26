@@ -7,7 +7,7 @@ require 'header.php';
     <?php
      foreach ($titles as $x => $title) {
          $quantity = 0;
-         if (in_array($x, $_SESSION["cartItems"])) {
+         if (in_array($x, array_keys($_SESSION["cartItems"]))) {
              $quantity = $_SESSION["cartItems"][$x];
          }
          echo '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
