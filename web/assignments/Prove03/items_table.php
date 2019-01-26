@@ -12,13 +12,15 @@
         <?php
 
             session_start();
-            
+
             foreach ($_SESSION["cartItems"] as $x) {
                 echo '<tr>
             <td data-th="Product">
                 <div class="row">
-                    <div class="col-sm-2 hidden-xs"><img src="' . $images[$x] . '" class="img-responsive" /></div>
-                    <div class="col-sm-10">
+                    <div class="col-2 hidden-xs">
+                        <img src="' . $images[$x] . '" class="img-fluid" />
+                    </div>
+                    <div class="col-10">
                         <h4 class="nomargin">' . $titles[$x] . '</h4>
                     </div>
                 </div>
