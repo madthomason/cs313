@@ -1,6 +1,8 @@
 <?php
 require 'header.php';
 
+
+
 echo '<div class="confirm_address p-3 m-3">
     <address class="vcard">
     <span class="adr">
@@ -16,6 +18,8 @@ echo '<div class="confirm_address p-3 m-3">
 <div class="container">';
 $remove = false;
 include 'items_table.php';
+
+unset($_SESSION["cartItems"]);
 ?>
 
     </table>

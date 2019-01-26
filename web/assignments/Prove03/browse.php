@@ -17,7 +17,7 @@ require 'header.php';
                         <img src="' . $images[$x] . '" class="card-img-top">
                         <div class="d-flex justify-content-around card-body">
                             <h5 class="card-title">' . $title . '</h5>
-                            <a class="btn bg-primary" href="add_items.php?id=' . $x . '">
+                            <a class="btn bg-primary" href="cart_items.php?id=' . $x . '">
                                 <i class="fas fa-cart-plus"></i>
                             </a>
                             <h5>Quantity: ' . $quantity . '</h5>
