@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aea913b-19c4-44bf-94f4-65b95af4d12b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assignments/Prove03/add_items.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Prove03/add_items.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/Prove03/browse.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Prove03/browse.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/Prove03/items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Prove03/items_table.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/Prove03/items_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="187">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding>
                 <element signature="e#152#169#0#HTML" expanded="true" />
                 <element signature="e#197#213#0#HTML" expanded="true" />
@@ -198,12 +196,12 @@
       <updated>1547674559356</updated>
       <workItem from="1547674561984" duration="2542000" />
       <workItem from="1547864704557" duration="15324000" />
-      <workItem from="1548202580174" duration="27570000" />
+      <workItem from="1548202580174" duration="27829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56328000" />
+    <option name="totallyTimeSpent" value="56587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -346,8 +344,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignments/Prove03/items_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="187">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
             <element signature="e#152#169#0#HTML" expanded="true" />
             <element signature="e#197#213#0#HTML" expanded="true" />

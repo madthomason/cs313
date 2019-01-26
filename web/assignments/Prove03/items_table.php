@@ -12,8 +12,8 @@
         <?php
 
             session_start();
-
-            foreach ($_SESSION["cart_items"] as $x) {
+            
+            foreach ($_SESSION["cartItems"] as $x) {
                 echo '<tr>
             <td data-th="Product">
                 <div class="row">
