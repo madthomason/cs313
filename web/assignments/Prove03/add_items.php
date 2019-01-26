@@ -12,7 +12,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 
 if (isset($_GET["id"])) {
     if (isset($_SESSION["cartItems"])) {
-        if (!empty($_SESSION["cartItems"][$_GET["id"]])) {
+        if (isset($_SESSION["cartItems"][$_GET["id"]])) {
             $_SESSION["cartItems"][$_GET["id"]] = $_SESSION["cartItems"][$_GET["id"]]++;
         } else {
             $_SESSION["cartItems"] .= ", " . $_GET["id"] . " => 1";
