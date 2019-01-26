@@ -7,7 +7,6 @@ require 'header.php';
     <?php
      foreach ($titles as $x => $title) {
          $quantity = 0;
-         echo '<h3>' . $_SESSION["cartItems"] . '</h3>';
          if (in_array($x, $_SESSION["cartItems"])) {
              foreach($_SESSION["cartItems"] as $a) {
                  if ($a==$x) {

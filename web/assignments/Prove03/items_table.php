@@ -11,7 +11,7 @@
         <tbody>
         <?php
 
-            //session_start();
+            session_start();
 
             foreach ($_SESSION["cart_items"] as $x) {
                 echo '<tr>
