@@ -8,11 +8,7 @@ require 'header.php';
      foreach ($titles as $x => $title) {
          $quantity = 0;
          if (in_array($x, $_SESSION["cartItems"])) {
-             foreach($_SESSION["cartItems"] as $a) {
-                 if ($a==$x) {
-                     $quantity++;
-                 }
-             }
+             $quantity = $_SESSION["cartItems"][$x];
          }
          echo '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
                     <div class="card h-100">

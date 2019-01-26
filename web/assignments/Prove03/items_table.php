@@ -13,7 +13,8 @@
 
             session_start();
 
-            foreach ($_SESSION["cartItems"] as $x) {
+            foreach ($_SESSION["cartItems"] as $x => $quantity) {
+
                 echo '<tr>
             <td data-th="Product">
                 <div class="row">
@@ -26,10 +27,11 @@
                 </div>
             </td>
             <td data-th="Price">Free!</td>
+            <td data-th="Quantity">' . $quantity . '</td>
             <td data-th="Subtotal" class="text-center">Free</td>';
                 if ($remove == true) {
                     echo '<td class="actions">
-                <a class="btn bg-light" href="remove_items.php?id=' . $x . '">
+                <a class="btn bg-danger" href="remove_items.php?id=' . $x . '">
                     <i class="far fa-trash-alt"></i>
                 </a>
             </td>';
