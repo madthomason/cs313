@@ -11,7 +11,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 }
 
 if (isset($_GET["id"])) {
-    if (!empty($_SESSION["cartItems"] && !isset($_SESSION["cartItems"]))) {
+    if (isset($_SESSION["cartItems"])) {
         if (!empty($_SESSION["cartItems"][$_GET["id"]])) {
             $_SESSION["cartItems"][$_GET["id"]] = $_SESSION["cartItems"][$_GET["id"]]++;
         } else {
