@@ -9,7 +9,11 @@ require 'header.php';
          $quantity = 0;
          echo '<h3>' . $_SESSION["cartItems"] . '</h3>';
          if (in_array($x, $_SESSION["cartItems"])) {
-             $quantity = count(array_filter($_SESSION["cartItems"], function($a, $x) {return $a==$x;}));
+             foreach($_SESSION["cartItems"] as $a) {
+                 if ($a==$x) {
+                     $quantity++;
+                 }
+             }
          }
          echo '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
                     <div class="card h-100">
