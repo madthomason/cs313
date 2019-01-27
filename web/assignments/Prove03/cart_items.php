@@ -11,7 +11,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 }
 
 if (isset($_GET["id"])) {
-    if (!isset($_GET["action"]) || $_GET["action"] === "add") {
+    if (!isset($_GET["action"]) || $_GET["action"] == "add") {
         if (isset($_SESSION["cartItems"]) && isset($_SESSION["cartItems"][$_GET["id"]])) {
             $_SESSION["cartItems"][$_GET["id"]] = $_SESSION["cartItems"][$_GET["id"]] + 1;
         } else {
@@ -21,17 +21,19 @@ if (isset($_GET["id"])) {
         if (!isset($_GET["action"])) {
             header("Location: browse.php");
         }
-    } else if ($_GET["action"] === "remove") {
+    } else if ($_GET["action"] == "remove") {
         if (isset($_SESSION["cartItems"][$_GET["id"]])) {
             $_SESSION["cartItems"][$_GET["id"]] = $_SESSION["cartItems"][$_GET["id"]] - 1;
             if ($_SESSION["cartItems"][$_GET["id"]] == 0) {
                 unset($_SESSION["cartItems"][$_GET["id"]]);
             }
         }
-    } else if ($_GET["action"] === "delete") {
+    } else if ($_GET["action"] == "delete") {
         unset($_SESSION["cartItems"][$_GET["id"]]);
     }
 }
 
-header("Location: shopping_cart.php");
+if (isset($_GET["action"])) {
+    header("Location: shopping_cart.php");
+}
 

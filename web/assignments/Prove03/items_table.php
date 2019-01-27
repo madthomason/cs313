@@ -30,12 +30,12 @@
             <td data-th="Quantity">' . $quantity . '</td>
             <td data-th="Subtotal" class="text-center">Free</td>';
                 if ($remove == true) {
-                    echo '<td class="actions">
+                    echo '<td class="actions d-flex">
                 <div class="d-flex flex-column">
-                <a class="btn bg-light" href="cart_items.php?action=&quot;add&quot;id=' . $x . '"><i class="fas fa-angle-up"></i></a>
-                <a class="btn bg-light" href="cart_items.php?action=&quot;remove&quot;id=' . $x . '"><i class="fas fa-angle-down"></i></a>
+                <a class="btn bg-light" href="cart_items.php?action=add&id=' . $x . '"><i class="fas fa-angle-up"></i></a>
+                <a class="btn bg-light" href="cart_items.php?action=remove&id=' . $x . '"><i class="fas fa-angle-down"></i></a>
                 </div>
-                <a class="btn bg-danger" href="cart_items.php?action=&quot;delete&quot;id=' . $x . '"><i class="far fa-trash-alt"></i></a>
+                <a class="btn bg-danger" href="cart_items.php?action=delete&id=' . $x . '"><i class="far fa-trash-alt"></i></a>
             </td>';
                 }
             }
