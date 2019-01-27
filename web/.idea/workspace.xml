@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aea913b-19c4-44bf-94f4-65b95af4d12b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assignments/Prove03/confirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Prove03/confirmation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/assignments.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assignments.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignments/Prove03/confirmation.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -29,6 +29,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
               <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assignments/assignments.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -96,7 +105,6 @@
         <option value="$PROJECT_DIR$/assignments.html" />
         <option value="$PROJECT_DIR$/homepage.php" />
         <option value="$PROJECT_DIR$/assignments/homepage.php" />
-        <option value="$PROJECT_DIR$/assignments/assignments.html" />
         <option value="$PROJECT_DIR$/assignments/Prove03/items.php" />
         <option value="$PROJECT_DIR$/assignments/general.css" />
         <option value="$PROJECT_DIR$/assignments/Prove03/remove_items.php" />
@@ -108,6 +116,7 @@
         <option value="$PROJECT_DIR$/assignments/Prove03/header.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/items_table.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/confirmation.php" />
+        <option value="$PROJECT_DIR$/assignments/assignments.html" />
       </list>
     </option>
   </component>
@@ -191,12 +200,12 @@
       <updated>1547674559356</updated>
       <workItem from="1547674561984" duration="2542000" />
       <workItem from="1547864704557" duration="15324000" />
-      <workItem from="1548202580174" duration="41541000" />
+      <workItem from="1548202580174" duration="41850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70299000" />
+    <option name="totallyTimeSpent" value="70608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -232,13 +241,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignments/media/IMG_5398.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignments/assignments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assignments/homepage.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -343,7 +345,14 @@
     <entry file="file://$PROJECT_DIR$/assignments/Prove03/confirmation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignments/assignments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
         </state>
       </provider>
     </entry>
