@@ -4,7 +4,7 @@ require 'header.php';
 
 
 echo '<div class="confirm_address p-3 m-3">
-    <address class="card">
+    <address>
     <span class="adr">
     <h4 class="name">' . htmlspecialchars($_POST["name"]) . '</h4><br>
     <span class="address">' . htmlspecialchars($_POST["address"]) . '</span><br>
