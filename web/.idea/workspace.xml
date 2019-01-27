@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aea913b-19c4-44bf-94f4-65b95af4d12b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assignments/Prove03/items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Prove03/items_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/Prove03/confirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/Prove03/confirmation.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,20 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/Prove03/confirmation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state relative-caret-position="102">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignments/Prove03/items_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+            <state relative-caret-position="510">
+              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -54,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignments/Prove03/checkout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="-423">
               <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
             </state>
           </provider>
@@ -101,13 +101,13 @@
         <option value="$PROJECT_DIR$/assignments/general.css" />
         <option value="$PROJECT_DIR$/assignments/Prove03/remove_items.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/shopping_cart.php" />
-        <option value="$PROJECT_DIR$/assignments/Prove03/confirmation.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/add_items.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/checkout.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/browse.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/cart_items.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/header.php" />
         <option value="$PROJECT_DIR$/assignments/Prove03/items_table.php" />
+        <option value="$PROJECT_DIR$/assignments/Prove03/confirmation.php" />
       </list>
     </option>
   </component>
@@ -191,12 +191,12 @@
       <updated>1547674559356</updated>
       <workItem from="1547674561984" duration="2542000" />
       <workItem from="1547864704557" duration="15324000" />
-      <workItem from="1548202580174" duration="40980000" />
+      <workItem from="1548202580174" duration="41541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69738000" />
+    <option name="totallyTimeSpent" value="70299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -288,20 +288,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignments/Prove03/confirmation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignments/Prove03/checkout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignments/Prove03/shopping_cart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -342,8 +328,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignments/Prove03/items_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+        <state relative-caret-position="510">
+          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignments/Prove03/checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignments/Prove03/confirmation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
