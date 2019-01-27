@@ -32,10 +32,10 @@
                 if ($remove == true) {
                     echo '<td class="actions d-flex">
                 <div class="d-flex flex-column">
-                <a class="btn bg-light" href="cart_items.php?action=add&id=' . $x . '"><i class="fas fa-angle-up"></i></a>
-                <a class="btn bg-light" href="cart_items.php?action=remove&id=' . $x . '"><i class="fas fa-angle-down"></i></a>
+                <a class="btn bg-light py-0" href="cart_items.php?action=add&id=' . $x . '"><i class="fas fa-angle-up"></i></a>
+                <a class="btn bg-light py-0" href="cart_items.php?action=remove&id=' . $x . '"><i class="fas fa-angle-down"></i></a>
                 </div>
-                <a class="btn bg-danger" href="cart_items.php?action=delete&id=' . $x . '"><i class="far fa-trash-alt"></i></a>
+                <a class="btn bg-danger" href="cart_items.php?action=delete&id=' . $x . '"><i class="far fa-trash-alt align-middle"></i></a>
             </td>';
                 }
             }
