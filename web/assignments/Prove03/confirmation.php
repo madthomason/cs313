@@ -19,7 +19,6 @@ echo '<div class="confirm_address p-3 m-3">
 $remove = false;
 include 'items_table.php';
 
-unset($_SESSION["cartItems"]);
 ?>
 
     </table>

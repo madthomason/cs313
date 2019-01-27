@@ -35,7 +35,7 @@
                 <a class="btn bg-light py-0" href="cart_items.php?action=add&id=' . $x . '"><i class="fas fa-angle-up"></i></a>
                 <a class="btn bg-light py-0" href="cart_items.php?action=remove&id=' . $x . '"><i class="fas fa-angle-down"></i></a>
                 </div>
-                <a class="btn bg-danger" href="cart_items.php?action=delete&id=' . $x . '"><i class="far fa-trash-alt align-middle"></i></a>
+                <a class="btn bg-danger" href="cart_items.php?action=delete&id=' . $x . '"><i class="far fa-trash-alt"></i></a>
             </td>';
                 }
             }
