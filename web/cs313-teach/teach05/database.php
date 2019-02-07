@@ -26,6 +26,6 @@ function getDb() {
 }
 
 
-$scripturesStmt = $db->prepare('SELECT * FROM scripture');
-$scripturesStmt->execute();
-$scriptures = $scripturesStmt->fetchAll(PDO::FETCH_ASSOC);
+//$scripturesStmt = $db->prepare('SELECT * FROM scripture');
+//$scripturesStmt->execute();
+//$scriptures = $scripturesStmt->fetchAll(PDO::FETCH_ASSOC);
