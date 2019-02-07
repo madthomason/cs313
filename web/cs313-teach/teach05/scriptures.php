@@ -25,7 +25,7 @@ include 'database.php';
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 </head>
-<body class="bg-info">
+<body>
 <div>
     <h1>Scripture Resources</h1>
 
