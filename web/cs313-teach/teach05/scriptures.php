@@ -31,15 +31,37 @@ include 'database.php';
 
     <?php
     $db = getDb();
-    $scripturesStmt = $db->prepare('SELECT * FROM scripture');
+    if (isset($_GET["book"])) {
+        $scripturesStmt = $db->prepare('SELECT * FROM scripture WHERE book=:book');
+        $scripturesStmt->bindParam(':book', $_GET["book"], PDO::PARAM_STR);
+
+    } else {
+        $scripturesStmt = $db->prepare('SELECT * FROM scripture');
+    }
+
     $scripturesStmt->execute();
     $scriptures = $scripturesStmt->fetchAll(PDO::FETCH_ASSOC);
 
+
+    $books = array();
     foreach ($scriptures as $scripture) {
+        array_push($books, $scripture["book"]);
         echo '<a href="details.php?id=' . $scripture["id"] . '"><h4>' . $scripture["book"] . ' ' . $scripture["chapter"] . ':' .
             $scripture["verse"] . '</h4></a><br>';
     }
     ?>
+
+    <form action="scriptures.php" method="get">
+<!--        <select>-->
+<!--            --><?php
+//            foreach ($books as $book) {
+//                echo '<option value="'. $book . '"> '. $book . '</option>';
+//            }
+//            ?>
+<!--        </select>-->
+        Book Name: <input type="text" name="book">
+        <input type="search">
+    </form>
 </div>
 
 </body>

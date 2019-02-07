@@ -41,6 +41,7 @@ include 'database.php';
         echo '<h1>' . $scripture["book"] . ' ' . $scripture["chapter"] . ':' .
             $scripture["verse"] . '</h1><br><p>' . $scripture["content"] . '</p>';
     ?>
+
 </div>
 
 </body>
