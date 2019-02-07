@@ -57,10 +57,10 @@ include 'database.php';
 //            foreach ($books as $book) {
 //                echo '<option value="'. $book . '"> '. $book . '</option>';
 //            }
-//            ?>
-<!--        </select>-->
+//          ?>
+      </select>-->
         Book Name: <input type="text" name="book">
-        <input type="search">
+        <input type="submit">
     </form>
 </div>
 

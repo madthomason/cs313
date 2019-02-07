@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aea913b-19c4-44bf-94f4-65b95af4d12b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/cs313-teach/teach05/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/cs313-teach/teach05/details.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cs313-teach/teach05/scriptures.php" beforeDir="false" afterPath="$PROJECT_DIR$/cs313-teach/teach05/scriptures.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,11 +18,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cs313-teach/teach05/scriptures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
+            <state relative-caret-position="328">
+              <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
               <folding>
                 <element signature="e#6#101#0#PHP" expanded="true" />
-                <element signature="e#1483#1524#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,12 +201,12 @@
       <workItem from="1547674561984" duration="2542000" />
       <workItem from="1547864704557" duration="15324000" />
       <workItem from="1548202580174" duration="41868000" />
-      <workItem from="1549299510249" duration="9321000" />
+      <workItem from="1549299510249" duration="9451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79947000" />
+    <option name="totallyTimeSpent" value="80077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -397,11 +395,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cs313-teach/teach05/scriptures.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
+        <state relative-caret-position="328">
+          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
           <folding>
             <element signature="e#6#101#0#PHP" expanded="true" />
-            <element signature="e#1483#1524#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
