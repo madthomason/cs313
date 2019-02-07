@@ -52,13 +52,6 @@ include 'database.php';
     ?>
 
     <form action="scriptures.php" method="get">
-<!--        <select>-->
-<!--            --><?php
-//            foreach ($books as $book) {
-//                echo '<option value="'. $book . '"> '. $book . '</option>';
-//            }
-//          ?>
-      </select>-->
         Book Name: <input type="text" name="book">
         <input type="submit">
     </form>
