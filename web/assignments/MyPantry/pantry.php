@@ -24,7 +24,7 @@ $cupboards = $_SESSION["cupboards"];
 ?>
 <div class="container">
     <nav class="navbar navbar-dark bg-dark">
-        <div class="collapse navbar-collapse">
+        <div>
             <?php
             echo '<a class="navbar-brand" href="pantry.php?id=' . $_SESSION["user"]["id"] . '">' . $_SESSION["user"]["name"] . '\'s Pantry</a>
         <div class="navbar-nav">';
