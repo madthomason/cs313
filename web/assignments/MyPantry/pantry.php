@@ -13,9 +13,6 @@ if (isset($_GET["id"])) {
     $_SESSION["cupboards"] = getCupboards($_SESSION["user"]["id"], $db);
     $items = getItems($_SESSION["cupboards"][0]["id"], $db);
 
-    $message = $_SESSION["cupboards"][0]["id"];
-    echo "<script type='text/javascript'>alert('$message');</script>";
-
 } else if (isset($_GET["cupboardId"])) {
     $items = getItems($_GET["cupboardId"], $db);
 } else {
@@ -23,7 +20,8 @@ if (isset($_GET["id"])) {
 }
 $cupboards = $_SESSION["cupboards"];
 $quantityTypes = getQuantityTypes();
-
+$message = $quantityTypes[0];
+echo "<script type='text/javascript'>alert('$message');</script>";
 //echo "<script type='text/javascript'>alert('$message');</script>";
 ?>
 <div class="container">
