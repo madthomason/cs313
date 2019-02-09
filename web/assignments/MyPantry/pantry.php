@@ -7,7 +7,7 @@
  */
 require 'header.php';
 
-function getUser($id)
+function getUser($id, $db)
 {
     $userStmt = $db->prepare('SELECT * FROM pantry.person WHERE id=:id');
     $userStmt->bindParam(':id', $id, PDO::PARAM_INT);
@@ -16,7 +16,7 @@ function getUser($id)
 }
 
 if (isset($_GET["id"])) {
-    $_SESSION["user"] = getUser($_GET["id"]);
+    $_SESSION["user"] = getUser($_GET["id"], $db);
     $message = $_SESSION["user"]["name"];
     //Get the cupboards
     $cupboardsStmt = $db->prepare('SELECT * FROM pantry.cupboard WHERE person_id=:userId');
