@@ -13,7 +13,7 @@ if (isset($_GET["id"])) {
     $_SESSION["cupboards"] = getCupboards($_SESSION["user"]["id"], $db);
     $items = getItems($_SESSION["cupboards"][0]["id"], $db);
 
-    $message = $items[0]["name"];
+    $message = $_SESSION["cupboards"][0]["id"];
     echo "<script type='text/javascript'>alert('$message');</script>";
 
 } else if (isset($_GET["cupboardId"])) {
