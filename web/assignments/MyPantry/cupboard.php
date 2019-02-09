@@ -7,7 +7,7 @@
 <div class="row w-100 m-0 p-3">
     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
         <div class="card d-flex justify-content-center align-items-center h-100">
-            <i class="fas fa-plus"></i>
+            <i class="fas fa-plus font-xxl"></i>
         </div>
     </div>
     <?php
