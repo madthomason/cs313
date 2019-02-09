@@ -9,43 +9,41 @@ require 'header.php';
 
 if (isset($_GET["id"])) {
     $_SESSION["user"] = getUser($_GET["id"], $db);
-    $message = $_SESSION["user"]["name"];
     //Get the cupboards
     $_SESSION["cupboards"] = getCupboards($_SESSION["user"]["id"], $db);
+    $items = getItems($_SESSION["cupboards"][0]["id"], $db);
 
-    $message = $_SESSION["cupboards"][0]["name"];
 } else if (isset($_GET["cupboardId"])) {
-    $itemsStmt = $db->prepare('SELECT * FROM pantry.item WHERE cupboard_id=:cupboardId');
-    $itemsStmt->bindParam(':cupboardId', $_GET["cupboardId"], PDO::PARAM_INT);
-    $itemsStmt->execute();
-    $items = $itemsStmt->fetchAll(PDO::FETCH_ASSOC);
+    $items = getItems($_GET["cupboardId"], $db);
 } else {
     header("Location: login.php?error=true");
 }
 $cupboards = $_SESSION["cupboards"];
 
-echo "<script type='text/javascript'>alert('$message');</script>";
+//echo "<script type='text/javascript'>alert('$message');</script>";
 ?>
 <div class="container">
     <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-        <?php
-        echo '<a class="navbar-brand" href="pantry.php?id=' . $_SESSION["user"]["id"] . '">'. $_SESSION["user"]["name"] . '\'s Pantry</a>';
-        foreach ($cupboards as $cupboard) {
-            echo '<a class="nav-item nav-link active" href="pantry.php?cupboardId=' . $cupboard["id"] . '">'
-                . $cupboard["name"] . '</a>';
-        }
-        ?>
-            <div class="nav navbar-nav navbar-right">
-                <a href="login.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
-            </div>
+        <div class="collapse navbar-collapse">
+            <?php
+            echo '<a class="navbar-brand" href="pantry.php?id=' . $_SESSION["user"]["id"] . '">' . $_SESSION["user"]["name"] . '\'s Pantry</a>
+        <div class="navbar-nav">';
+            foreach ($cupboards as $cupboard) {
+                echo '<a class="nav-item nav-link active" href="pantry.php?cupboardId=' . $cupboard["id"] . '">'
+                    . $cupboard["name"] . '</a>';
+            }
+            ?>
         </div>
-    </nav>
+</div>
+<div class="nav navbar-nav navbar-right">
+    <a href="login.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+</div>
+
+</nav>
 </div>
 <?php
 require 'cupboard.php?';
 ?>
-
 
 </body>
 </html>
