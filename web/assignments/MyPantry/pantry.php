@@ -10,7 +10,7 @@ require 'header.php';
 if (isset($_GET["id"])) {
     $_SESSION["user"] = getUser($_GET["id"], $db);
     //Get the cupboards
-    $cupboards = getCupboards($_SESSION["user"]["id"], $db);
+    $_SESSION["cupboards"] = getCupboards($_SESSION["user"]["id"], $db);
     $items = getItems($_SESSION["cupboards"][0]["id"], $db);
 
 } else if (isset($_GET["cupboardId"])) {
@@ -18,7 +18,7 @@ if (isset($_GET["id"])) {
 } else {
     header("Location: login.php?error=true");
 }
-
+$cupboards = $_SESSION["cupboards"];
 
 $quantityTypes = getQuantityTypes();
 
@@ -33,7 +33,7 @@ $quantityTypes = getQuantityTypes();
             echo '<a class="navbar-brand" href="pantry.php?id=' . $_SESSION["user"]["id"] . '">' . $_SESSION["user"]["name"] . '\'s Pantry</a>
         <div class="navbar-nav flex-row">';
             foreach ($cupboards as $cupboard) {
-                $_SESSION["cupboards"][$cupboard["cupboardId"]] = $cupboard["description"];
+                $_SESSION["cupboardDesc"][$cupboard["cupboardId"]] = $cupboard["description"];
                 echo '<a class="nav-item nav-link p-2" href="pantry.php?cupboardId=' . $cupboard["id"] . '">'
                     . $cupboard["name"] . '</a>';
             }
