@@ -7,21 +7,11 @@
  */
 require 'header.php';
 
-function getUser($id, $db)
-{
-    $userStmt = $db->prepare('SELECT * FROM pantry.person WHERE id=:id');
-    $userStmt->bindParam(':id', $id, PDO::PARAM_INT);
-    $userStmt->execute();
-    return $userStmt->fetch(PDO::FETCH_ASSOC);
-}
-
 if (isset($_GET["id"])) {
     $_SESSION["user"] = getUser($_GET["id"], $db);
     $message = $_SESSION["user"]["name"];
     //Get the cupboards
-    $cupboardsStmt = $db->prepare('SELECT * FROM pantry.cupboard WHERE person_id=:userId');
-    $cupboardsStmt->execute(array(':userId' => $_SESSION["user"]["id"]));
-    $_SESSION["cupboards"] = $cupboardsStmt->fetchAll(PDO::FETCH_ASSOC);
+    $_SESSION["cupboards"] = getCupboards($_SESSION["user"]["id"], $db);
 
     $message = $_SESSION["cupboards"][0]["name"];
 } else if (isset($_GET["cupboardId"])) {
@@ -37,13 +27,21 @@ $cupboards = $_SESSION["cupboards"];
 echo "<script type='text/javascript'>alert('$message');</script>";
 ?>
 <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
         <?php
+        echo '<div class="navbar-header">
+            <a class="navbar-brand" href="#">'. $_SESSION["user"]["name"] . '\'s Pantry</a>
+        </div>';
         foreach ($cupboards as $cupboard) {
             echo '<a class="nav-item nav-link active" href="pantry.php?cupboardId=' . $cupboard["id"] . '">'
-                . $cupboard["name"] . '<span class="sr-only">(current)</span></a>';
+                . $cupboard["name"] . '</a>';
         }
         ?>
+            <div class="nav navbar-nav navbar-right">
+                <a href="login.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </div>
     </nav>
 </div>
 <?php

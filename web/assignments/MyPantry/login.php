@@ -2,11 +2,7 @@
 include 'header.php';
 
 if (isset($_POST["username"]) && isset($_POST["password"])) {
-    $loginStmt = $db->prepare('SELECT * FROM pantry.person WHERE (name=:login OR email=:login) AND password=:password');
-    $loginStmt->bindParam(':login', $_POST["username"], PDO::PARAM_STR);
-    $loginStmt->bindParam(':password', $_POST["password"], PDO::PARAM_STR);
-    $loginStmt->execute();
-    $user = $loginStmt->fetch(PDO::FETCH_ASSOC);
+    $user = loginForUser($_POST["username"], $_POST["password"], $db);
 
     if (isset($user["id"])) {
         header("Location: pantry.php?id=" . $user["id"]);
