@@ -27,12 +27,10 @@ $cupboards = $_SESSION["cupboards"];
 echo "<script type='text/javascript'>alert('$message');</script>";
 ?>
 <div class="container">
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
         <?php
-        echo '<div class="navbar-header">
-            <a class="navbar-brand" href="#">'. $_SESSION["user"]["name"] . '\'s Pantry</a>
-        </div>';
+        echo '<a class="navbar-brand" href="pantry.php?id=' . $_SESSION["user"]["id"] . '">'. $_SESSION["user"]["name"] . '\'s Pantry</a>';
         foreach ($cupboards as $cupboard) {
             echo '<a class="nav-item nav-link active" href="pantry.php?cupboardId=' . $cupboard["id"] . '">'
                 . $cupboard["name"] . '</a>';
