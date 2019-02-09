@@ -26,7 +26,6 @@ $quantityTypes = getQuantityTypes();
 //$message = $quantityTypes[0];
 //echo "<script type='text/javascript'>alert('$message');</script>";
 ?>
-<div class="container">
     <nav class="navbar navbar-dark bg-dark">
         <div class="d-flex">
             <?php
@@ -45,7 +44,6 @@ $quantityTypes = getQuantityTypes();
 </div>
 
 </nav>
-</div>
 <?php
 require 'cupboard.php';
 ?>

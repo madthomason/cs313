@@ -1,6 +1,6 @@
 <div>
     <?php
-    echo '<h5>' . $_SESSION["cupboards"][$items[0]["cupboard_id"]] . '</h5>';
+    echo '<h5>' . $_SESSION["cupboardDesc"][$items[0]["cupboard_id"]] . '</h5>';
     ?>
 
 </div>
