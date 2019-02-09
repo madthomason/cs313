@@ -13,6 +13,9 @@ if (isset($_GET["id"])) {
     $_SESSION["cupboards"] = getCupboards($_SESSION["user"]["id"], $db);
     $items = getItems($_SESSION["cupboards"][0]["id"], $db);
 
+    $message = $items[0]["name"];
+    echo "<script type='text/javascript'>alert('$message');</script>";
+
 } else if (isset($_GET["cupboardId"])) {
     $items = getItems($_GET["cupboardId"], $db);
 } else {
@@ -42,8 +45,6 @@ $cupboards = $_SESSION["cupboards"];
 </nav>
 </div>
 <?php
-$message = $items[0]["name"];
-echo "<script type='text/javascript'>alert('$message');</script>";
 require 'cupboard.php';
 ?>
 
