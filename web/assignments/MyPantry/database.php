@@ -50,9 +50,9 @@ function getDb() {
 //$items =  varchar(45)->fetchAll(PDO::FETCH_ASSOC);
 
 
-//$signUpStmt = $db->prepare('INSERT INTO pantry.person (name, email) VALUES(:name, :email)'');
+//$signUpStmt = $db->prepare('INSERT INTO pantry.person (name, email, password) VALUES(:name, :email, :password)'');
 //$signUpStmt->execute(array(':name' => $name, ':email' => $email));
 
-//$updateItemsStmt = $db->prepare('SELECT * FROM pantry.item WHERE name is like :login OR email is like :login');
+//$updateItemsStmt = $db->prepare('UPDATE pantry.items SET quantity = quantity + 1 WHERE id=: ');
 //$updateCupboardsStmt = $db->prepare('SELECT * FROM pantry.cupboard WHERE name is like :login OR email is like :login');
 

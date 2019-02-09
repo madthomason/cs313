@@ -36,27 +36,15 @@ if(isset($_GET["id"])) {
             <ul class="navbar-nav">
                 <?php
                 foreach($cupboards as $cupboard) {
-                    echo "<li class=\"nav-item active\">
-                    <a class=\"nav-link\" href=\"#\">$cupboard <span class=\"sr-only\">(current)</span></a>
-                </li>";
+                    echo '<a class="nav-item nav-link active" href="*">'. $cupboard["name"] .'<span class="sr-only">(current)</span></a>';
                 }
                 ?>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
             </ul>
         </div>
     </nav>
 </div>
 <?php
-require 'cupboard.php';
+require 'cupboard.php?';
 ?>
 
 

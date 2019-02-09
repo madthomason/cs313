@@ -27,12 +27,12 @@ if (isset($_GET["error"]) || $error) {
 
 ?>
 <div>
-    <div class="wrapper">
+    <div class="card">
         <form class="form-signin" action="login.php" method="post">
             <h2>Please login</h2>
             <input type="text" class="form-control" name="username" placeholder="Email Address or Username" required="" autofocus="" />
             <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
-            <input class="btn btn-lg btn-primary btn-block" type="submit">Login</input>
+            <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
         </form>
     </div>
 <!--    <div class="wrapper hidden">-->
