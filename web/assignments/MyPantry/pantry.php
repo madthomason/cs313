@@ -23,7 +23,7 @@ $cupboards = $_SESSION["cupboards"];
 //echo "<script type='text/javascript'>alert('$message');</script>";
 ?>
 <div class="container">
-    <nav class="navbar navbar-dark">
+    <nav class="navbar navbar-dark bg-dark">
         <div class="d-flex">
             <?php
             echo '<a class="navbar-brand" href="pantry.php?id=' . $_SESSION["user"]["id"] . '">' . $_SESSION["user"]["name"] . '\'s Pantry</a>
@@ -42,6 +42,8 @@ $cupboards = $_SESSION["cupboards"];
 </nav>
 </div>
 <?php
+$message = $items[0]["name"];
+echo "<script type='text/javascript'>alert('$message');</script>";
 require 'cupboard.php';
 ?>
 
