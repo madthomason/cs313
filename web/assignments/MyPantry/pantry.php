@@ -32,7 +32,7 @@ $quantityTypes = getQuantityTypes();
             echo '<a class="navbar-brand" href="pantry.php?id=' . $_SESSION["user"]["id"] . '">' . $_SESSION["user"]["name"] . '\'s Pantry</a>
         <div class="navbar-nav flex-row">';
             foreach ($cupboards as $cupboard) {
-                $_SESSION["cupboardDesc"][$cupboard["cupboardId"]] = $cupboard["description"];
+                $_SESSION["cupboardDesc"][$cupboard["id"]] = $cupboard["description"];
                 echo '<a class="nav-item nav-link p-2" href="pantry.php?cupboardId=' . $cupboard["id"] . '">'
                     . $cupboard["name"] . '</a>';
             }
