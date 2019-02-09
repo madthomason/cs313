@@ -5,7 +5,7 @@
         ?>
     </h5>
 </div>
-<div class="row">
+<div class="row w-100 m-0 p-3">
     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
         <div class="card h-100">
             <i class="fas fa-plus"></i>
