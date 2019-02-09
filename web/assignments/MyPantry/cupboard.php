@@ -1,4 +1,11 @@
 <div>
+    <h5>
+        <?php
+        echo $_SESSION["cupboards"][$items[0]["cupboard_id"]];
+        ?>
+    </h5>
+</div>
+<div class="row">
     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
         <div class="card h-100">
             <i class="fas fa-plus"></i>
@@ -18,7 +25,7 @@
                             </a>
                             <div>
                             <h6>Quantity: ' . $item["quantity"] . ' ' . $quantityTypes[$item["quantity_type_id"]] . '</h6>
-                            <p class="text-muted">Restock Quantity: ' . $item["restock_quantity"] . ' ' . $quantityTypes[$item["quantity_type_id"]] . '</p>
+                            <p class="text-muted mb-0"><small>Restock Quantity: ' . $item["restock_quantity"] . ' ' . $quantityTypes[$item["quantity_type_id"]] . '</small></p>
                             </div>
                             
                         </div>
