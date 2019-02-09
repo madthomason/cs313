@@ -24,7 +24,11 @@ INSERT INTO pantry.cupboard (person_id, name, description)
 			(15, 'Pasta Sauce', 5, 2, 1),
 			(13, 'Popcorn', 1, 0, .5),
 			(14, 'Pinto Beans', 23, 0, 3),
-			(15, 'Cream of Chicken Soup', 3, 2, 1);
+			(15, 'Cream of Chicken Soup', 3, 2, 1),
+			(16, 'Pretzels', 2, 2, 1),
+			(17, 'Rice', 25, 0, 3),
+			(16, 'Popcorn', 1, 0, .5),
+			(17, 'Pinto Beans', 23, 0, 3);
 
 
 ALTER TABLE pantry.person ADD COLUMN password varchar(255);

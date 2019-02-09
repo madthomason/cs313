@@ -22,6 +22,7 @@ if (isset($_GET["id"])) {
     header("Location: login.php?error=true");
 }
 $cupboards = $_SESSION["cupboards"];
+$quantityTypes = getQuantityTypes();
 
 //echo "<script type='text/javascript'>alert('$message');</script>";
 ?>

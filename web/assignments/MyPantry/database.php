@@ -74,7 +74,12 @@ function getItems($cupboardId, $db)
 function getQuantityTypes()
 {
     $quantityTypesStmt = getDb()->prepare('SELECT * FROM pantry.quantity_type');
-    return $quantityTypesStmt->fetchAll(PDO::FETCH_ASSOC);
+    $rows = $quantityTypesStmt->fetchAll(PDO::FETCH_ASSOC);
+    $quantityTypes = array();
+    foreach($rows as $row) {
+        $quantityTypes[$row["id"]] = $row["measurement"];
+    }
+    return $quantityTypes;
 }
 
 

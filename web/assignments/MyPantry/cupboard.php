@@ -17,7 +17,7 @@
                             <a class="btn bg-primary" href="quantity.php?type=remove&id=' . $item["id"] . '">
                                 <i class="fas fa-minus-square"></i>
                             </a>
-                            <h5>Quantity: ' . $item["quantity"] . ' ' . $item["quantity_type_id"] . '</h5>
+                            <h5>Quantity: ' . $item["quantity"] . ' ' . $quantityTypes[$item["quantity_type_id"]] . '</h5>
                         </div>
                     </div>
                 </div>';
