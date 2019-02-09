@@ -1,4 +1,3 @@
-
 <div>
     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
         <div class="card h-100">
@@ -17,7 +16,11 @@
                             <a class="btn bg-primary" href="quantity.php?type=remove&id=' . $item["id"] . '">
                                 <i class="fas fa-minus-square"></i>
                             </a>
+                            <div>
                             <h5>Quantity: ' . $item["quantity"] . ' ' . $quantityTypes[$item["quantity_type_id"]] . '</h5>
+                            <h5 class="text-muted">Restock Quantity: ' . $item["restock_quantity"] . ' ' . $quantityTypes[$item["quantity_type_id"]] . '</h5>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>';

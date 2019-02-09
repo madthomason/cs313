@@ -20,8 +20,9 @@ if (isset($_GET["id"])) {
 }
 $cupboards = $_SESSION["cupboards"];
 $quantityTypes = getQuantityTypes();
-$message = $quantityTypes[0];
-echo "<script type='text/javascript'>alert('$message');</script>";
+
+////debuggers:
+//$message = $quantityTypes[0];
 //echo "<script type='text/javascript'>alert('$message');</script>";
 ?>
 <div class="container">
