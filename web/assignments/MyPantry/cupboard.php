@@ -17,8 +17,8 @@
                                 <i class="fas fa-minus-square"></i>
                             </a>
                             <div>
-                            <h5>Quantity: ' . $item["quantity"] . ' ' . $quantityTypes[$item["quantity_type_id"]] . '</h5>
-                            <h5 class="text-muted">Restock Quantity: ' . $item["restock_quantity"] . ' ' . $quantityTypes[$item["quantity_type_id"]] . '</h5>
+                            <h6>Quantity: ' . $item["quantity"] . ' ' . $quantityTypes[$item["quantity_type_id"]] . '</h6>
+                            <p class="text-muted">Restock Quantity: ' . $item["restock_quantity"] . ' ' . $quantityTypes[$item["quantity_type_id"]] . '</p>
                             </div>
                             
                         </div>
