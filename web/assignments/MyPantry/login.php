@@ -27,7 +27,7 @@ if (isset($_GET["error"]) || $error) {
 
 ?>
     <div class="d-flex justify-content-center align-items-center vh-100">
-        <div class="card p-3">
+        <div class="card w-25 p-3">
             <form class="form-signin" action="login.php" method="post">
                 <h2>Please login</h2>
                 <input type="text" class="form-control" name="username" placeholder="Email Address or Username"

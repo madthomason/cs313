@@ -6,10 +6,7 @@
         </div>
     </div>
     <?php
-    $itemsStmt = $db->prepare('SELECT * FROM pantry.item WHERE cupboard_id=:cupboardId');
-    $itemsStmt->bindParam(':cupboardId', $cupboardId, PDO::PARAM_INT);
-    $itemsStmt->execute();
-    $items =  varchar(45)->fetchAll(PDO::FETCH_ASSOC);
+
     foreach($items as $item) {
         echo '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
                     <div class="card h-100">

@@ -8,7 +8,7 @@
 
 require 'database.php';
 $db = getDb();
-
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
