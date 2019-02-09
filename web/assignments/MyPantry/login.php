@@ -26,7 +26,7 @@ if (isset($_GET["error"]) || $error) {
 //$signUpStmt->execute(array(':name' => $name, ':email' => $email));
 
 ?>
-<div>
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
     <div class="card">
         <form class="form-signin" action="login.php" method="post">
             <h2>Please login</h2>
