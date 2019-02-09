@@ -26,23 +26,26 @@ if (isset($_GET["error"]) || $error) {
 //$signUpStmt->execute(array(':name' => $name, ':email' => $email));
 
 ?>
-<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
-    <div class="card">
-        <form class="form-signin" action="login.php" method="post">
-            <h2>Please login</h2>
-            <input type="text" class="form-control" name="username" placeholder="Email Address or Username" required="" autofocus="" />
-            <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
-            <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
-        </form>
+<div class="mx-auto align-middle">
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
+        <div class="card h-100 p-3">
+            <form class="form-signin" action="login.php" method="post">
+                <h2>Please login</h2>
+                <input type="text" class="form-control" name="username" placeholder="Email Address or Username"
+                       required="" autofocus=""/>
+                <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+                <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+            </form>
+        </div>
+        <!--    <div class="wrapper hidden">-->
+        <!--        <form class="form-signup" action="cupboard.php" method="post">-->
+        <!--            <h2>Please Put in your information</h2>-->
+        <!--            <input type="text" class="form-control" name="name" placeholder="Username" required="" autofocus="" />-->
+        <!--            <input type="email" class="form-control" name="email" placeholder="Email Address" required=""/>-->
+        <!--            <input class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</input>-->
+        <!--        </form>-->
+        <!--    </div>-->
     </div>
-<!--    <div class="wrapper hidden">-->
-<!--        <form class="form-signup" action="cupboard.php" method="post">-->
-<!--            <h2>Please Put in your information</h2>-->
-<!--            <input type="text" class="form-control" name="name" placeholder="Username" required="" autofocus="" />-->
-<!--            <input type="email" class="form-control" name="email" placeholder="Email Address" required=""/>-->
-<!--            <input class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</input>-->
-<!--        </form>-->
-<!--    </div>-->
 </div>
 </body>
 </html>
