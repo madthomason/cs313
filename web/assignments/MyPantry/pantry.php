@@ -36,8 +36,6 @@ $quantityTypes = getQuantityTypes();
                 echo '<a class="nav-item nav-link p-2" href="pantry.php?cupboardId=' . $cupboard["id"] . '">'
                     . $cupboard["name"] . '</a>';
             }
-            $message =  $_SESSION["cupboardDesc"][16] . ': ' . $items[0]["cupboard_id"];
-            echo "<script type='text/javascript'>alert('$message');</script>";
             ?>
         </div>
 </div>
