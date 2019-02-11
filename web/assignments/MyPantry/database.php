@@ -45,7 +45,9 @@ function signUp($name, $email, $password, $db)
     $signUpStmt->bindParam(':login', $email, PDO::PARAM_STR);
     $signUpStmt->bindParam(':password', $password, PDO::PARAM_STR);
     $signUpStmt->execute();
-    return loginForUser($name, $password, $db);
+
+    $newId = $db->lastInsertId('person_id_seq'); //if not seq might be 'pantry.person_id_seq'
+    return getUser($newId, $db);
 }
 
 function getUser($id, $db)
@@ -63,12 +65,38 @@ function getCupboards($userId, $db)
     return $cupboardsStmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
+function createCupboard($personId, $name, $description, $db) {
+    $createCupboardStmt = $db->prepare('INSERT INTO pantry.cupboard (person_id, name, description) VALUES(:password, :name, :description)');
+    $createCupboardStmt->bindParam(':person_id', $personId, PDO::PARAM_INT);
+    $createCupboardStmt->bindParam(':name', $name, PDO::PARAM_STR);
+    $createCupboardStmt->bindParam(':description', $description, PDO::PARAM_STR);
+    $createCupboardStmt->execute();
+}
+
+function updateCupboard($id, $name, $description, $db) {
+    $updateCupboardsStmt = $db->prepare('UPDATE pantry.item SET name=:name, description=:description WHERE id=:id');
+    $updateCupboardsStmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $updateCupboardsStmt->bindParam(':name', $name, PDO::PARAM_STR);
+    $updateCupboardsStmt->bindParam(':description', $description, PDO::PARAM_STR);
+    $updateCupboardsStmt->execute();
+}
+
 function getItems($cupboardId, $db)
 {
     $itemsStmt = $db->prepare('SELECT * FROM pantry.item WHERE cupboard_id=:cupboardId');
     $itemsStmt->bindParam(':cupboardId', $cupboardId, PDO::PARAM_INT);
     $itemsStmt->execute();
     return $itemsStmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function createItem($cupboardId, $name, $quantity_type_id, $quantity, $restock_quantity, $db) {
+    $signUpStmt = $db->prepare('INSERT INTO pantry.item (cupboardId, name, quantity_type_id, quantity, restock_quantity) VALUES(:cupboardId, :name, :quantity_type_id, :quantity, :restock_quantity)');
+    $signUpStmt->bindParam(':cupboardId', $cupboardId, PDO::PARAM_INT);
+    $signUpStmt->bindParam(':name', $name, PDO::PARAM_STR);
+    $signUpStmt->bindParam(':quantity_type_id', $quantity_type_id, PDO::PARAM_INT);
+    $signUpStmt->bindParam(':quantity', $quantity, PDO::PARAM_INT);
+    $signUpStmt->bindParam(':restock_quantity', $restock_quantity, PDO::PARAM_INT);
+    $signUpStmt->execute();
 }
 
 function getQuantityTypes()
@@ -84,6 +112,6 @@ function getQuantityTypes()
 
 
 
-//$updateItemsStmt = $db->prepare('UPDATE pantry.items SET quantity = quantity + 1 WHERE id=: ');
-//$updateCupboardsStmt = $db->prepare('SELECT * FROM pantry.cupboard WHERE name is like :login OR email is like :login');
+//$updateItemsStmt = $db->prepare('UPDATE pantry.item SET quantity = quantity + 1 WHERE id=: ');
+//$updateCupboardsStmt = $db->prepare('UPDATE pantry.item SET name=:name, description=:description WHERE id=: ');
 
