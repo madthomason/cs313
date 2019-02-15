@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aea913b-19c4-44bf-94f4-65b95af4d12b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/MyPantry/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/MyPantry/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/MyPantry/itemModal.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/MyPantry/itemModal.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/MyPantry/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/MyPantry/login.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignments/MyPantry/database.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="172">
@@ -63,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/MyPantry/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="153">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -130,8 +127,8 @@
         <option value="$PROJECT_DIR$/assignments/MyPantry/cupboardModal.php" />
         <option value="$PROJECT_DIR$/assignments/MyPantry/insertUpdate.php" />
         <option value="$PROJECT_DIR$/assignments/MyPantry/itemModal.php" />
-        <option value="$PROJECT_DIR$/assignments/MyPantry/login.php" />
         <option value="$PROJECT_DIR$/assignments/MyPantry/database.php" />
+        <option value="$PROJECT_DIR$/assignments/MyPantry/login.php" />
       </list>
     </option>
   </component>
@@ -221,12 +218,12 @@
       <workItem from="1549658734377" duration="28561000" />
       <workItem from="1549899621767" duration="2093000" />
       <workItem from="1549993217149" duration="9591000" />
-      <workItem from="1550248025013" duration="2998000" />
+      <workItem from="1550248025013" duration="3284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126207000" />
+    <option name="totallyTimeSpent" value="126493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -425,13 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignments/MyPantry/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignments/MyPantry/pantry.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -464,6 +454,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignments/MyPantry/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>

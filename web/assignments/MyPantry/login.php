@@ -3,18 +3,24 @@ include 'header.php';
 if (isset($_GET["signup"])) {
     if (isset($_POST["username"]) && isset($_POST["email"]) && isset($_POST["password"])) {
         $userId = signUp($_POST["username"], $_POST["email"], $_POST["password"], $db);
+        if (isset($userId)) {
+            header("Location: pantry.php?id=" . $userId);
+        } else {
+            $error = true;
+        }
     }
 } else {
     if (isset($_POST["username"]) && isset($_POST["password"])) {
         $userId = loginForUser($_POST["username"], $_POST["password"], $db);
+        if (isset($userId)) {
+            header("Location: pantry.php?id=" . $userId);
+        } else {
+            $error = true;
+        }
     }
 }
 
-if (isset($userId)) {
-    header("Location: pantry.php?id=" . $userId);
-} else {
-    $error = true;
-}
+
 
 if (isset($_GET["error"]) || $error) {
     //alert error
@@ -29,7 +35,7 @@ if (isset($_GET["error"]) || $error) {
 
 ?>
 <div class="d-flex justify-content-center align-items-center vh-100">
-    <div class="card w-25 p-3">
+    <div id="login" class="card w-25 p-3">
         <form class="form-signin" action="login.php" method="post">
             <h2>Please login</h2>
             <input type="text" class="form-control" name="username" placeholder="Email Address or Username"
@@ -41,7 +47,7 @@ if (isset($_GET["error"]) || $error) {
         <button class="btn btn-lg btn-primary btn-block" onclick="toggleCards()">Sign Up!</button>
     </div>
 
-    <div class="card w-25 p-3 d-none">
+    <div id="signup" class="card w-25 p-3 d-none">
         <form class="form-signin" action="login.php?signup=true" method="post">
             <h2>Sign Up</h2>
             <input type="text" class="form-control" name="username" placeholder="Username"
@@ -58,8 +64,10 @@ if (isset($_GET["error"]) || $error) {
 </div>
 <script>
     function toggleCards() {
-        var cards = document.getElementsByClassName("card");
-        cards.classList.toggle("d-none");
+        var signup = document.getElementById("signup");
+        var login = document.getElementById("login");
+        signup.classList.toggle("d-none");
+        login.classList.toggle("d-none");
     }
 </script>
 </body>
