@@ -1,15 +1,21 @@
 <?php
 include 'header.php';
-
-if (isset($_POST["username"]) && isset($_POST["password"])) {
-    $user = loginForUser($_POST["username"], $_POST["password"], $db);
-
-    if (isset($user["id"])) {
-        header("Location: pantry.php?id=" . $user["id"]);
-    } else {
-        $error = true;
+if (isset($_GET["signup"])) {
+    if (isset($_POST["username"]) && isset($_POST["email"]) && isset($_POST["password"])) {
+        $userId = signUp($_POST["username"], $_POST["email"], $_POST["password"], $db);
+    }
+} else {
+    if (isset($_POST["username"]) && isset($_POST["password"])) {
+        $userId = loginForUser($_POST["username"], $_POST["password"], $db);
     }
 }
+
+if (isset($userId)) {
+    header("Location: pantry.php?id=" . $userId);
+} else {
+    $error = true;
+}
+
 if (isset($_GET["error"]) || $error) {
     //alert error
     $message = "Incorrect Username/Password. Try again";
@@ -22,25 +28,40 @@ if (isset($_GET["error"]) || $error) {
 //$signUpStmt->execute(array(':name' => $name, ':email' => $email));
 
 ?>
-    <div class="d-flex justify-content-center align-items-center vh-100">
-        <div class="card w-25 p-3">
-            <form class="form-signin" action="login.php" method="post">
-                <h2>Please login</h2>
-                <input type="text" class="form-control" name="username" placeholder="Email Address or Username"
-                       required="" autofocus=""/>
-                <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
-                <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
-            </form>
-        </div>
-        <!--    <div class="wrapper hidden">-->
-        <!--        <form class="form-signup" action="cupboard.php" method="post">-->
-        <!--            <h2>Please Put in your information</h2>-->
-        <!--            <input type="text" class="form-control" name="name" placeholder="Username" required="" autofocus="" />-->
-        <!--            <input type="email" class="form-control" name="email" placeholder="Email Address" required=""/>-->
-        <!--            <input class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</input>-->
-        <!--        </form>-->
-        <!--    </div>-->
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card w-25 p-3">
+        <form class="form-signin" action="login.php" method="post">
+            <h2>Please login</h2>
+            <input type="text" class="form-control" name="username" placeholder="Email Address or Username"
+                   required="" autofocus=""/>
+            <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+            <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+        </form>
+        <h6>Don't have an account?</h6>
+        <button class="btn btn-lg btn-primary btn-block" onclick="toggleCards()">Sign Up!</button>
     </div>
+
+    <div class="card w-25 p-3 d-none">
+        <form class="form-signin" action="login.php?signup=true" method="post">
+            <h2>Sign Up</h2>
+            <input type="text" class="form-control" name="username" placeholder="Username"
+                   required="" autofocus=""/>
+            <input type="email" class="form-control" name="email" placeholder="Email Address"
+                   required="" autofocus=""/>
+
+            <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+            <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign Up">
+        </form>
+        <h6>Already have an account?</h6>
+        <button class="btn btn-lg btn-primary btn-block" onclick="toggleCards()">Login!</button>
+    </div>
+</div>
+<script>
+    function toggleCards() {
+        var cards = document.getElementsByClassName("card");
+        cards.classList.toggle("d-none");
+    }
+</script>
 </body>
 </html>
 

@@ -9,16 +9,17 @@
 <form class="form-inline" role="form" action="insertUpdate.php?item=insert" method="post">
     <div class="form-group">
         <div class="cupboard d-flex">
-        Cupboard:
+        Cupboard: <select name="cupboard_id" class="form-control">
             <?php
             foreach($cupboards as $cupboard) {
-                echo '<input type="radio" name="cupboard" value="' . $cupboard["id"] . '"';
+                echo '<option value="' . $cupboard["id"] . '"';
                 if ($cupboard["id"] == $cupboardId) {
-                    echo ' checked';
+                    echo ' selected="selected"';
                 }
                 echo '>' . $cupboard["name"] . '</option>';
             }
             ?>
+            </select>
         </div>
         Item Name: <input type="text" name="name" placeholder="Name" class="form-control">
         Quantity: <input type="number" name="quantity" min="0" class="form-control">

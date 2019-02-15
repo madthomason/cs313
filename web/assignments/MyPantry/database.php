@@ -31,7 +31,7 @@ function getDb()
 
 function loginForUser($username, $password, $db)
 {
-    $loginStmt = $db->prepare('SELECT * FROM pantry.person WHERE (name=:login OR email=:login) AND password=:password');
+    $loginStmt = $db->prepare('SELECT id FROM pantry.person WHERE (name=:login OR email=:login) AND password=:password');
     $loginStmt->bindParam(':login', $username, PDO::PARAM_STR);
     $loginStmt->bindParam(':password', $password, PDO::PARAM_STR);
     $loginStmt->execute();
@@ -46,8 +46,7 @@ function signUp($name, $email, $password, $db)
     $signUpStmt->bindParam(':password', $password, PDO::PARAM_STR);
     $signUpStmt->execute();
 
-    $newId = $db->lastInsertId('person_id_seq'); //if not seq might be 'pantry.person_id_seq'
-    return getUser($newId, $db);
+    return $db->lastInsertId('person_id_seq'); //if not seq might be 'pantry.person_id_seq';
 }
 
 function getUser($id, $db)
