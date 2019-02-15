@@ -37,6 +37,15 @@ $quantityTypes = getQuantityTypes();
                     . $cupboard["name"] . '</a>';
             }
             ?>
+            <a data-placement="bottom" data-toggle="popover" data-title="Login" data-container="body" type="button" data-html="true" href="#" id="login">
+                <i class="fas fa-plus font-xxl"></i>
+            </a>
+
+            <div id="popover-content" class="hide">
+                <?php
+                require 'itemModal.php'
+                ?>
+            </div>
         </div>
 </div>
 <div class="nav navbar-nav navbar-right">
