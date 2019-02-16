@@ -37,9 +37,6 @@ $quantityTypes = getQuantityTypes();
                     . $cupboard["name"] . '</a>';
             }
             ?>
-            <a data-placement="bottom" data-toggle="popover" data-title="Login" data-container="body" type="button" data-html="true" href="#" id="login">
-
-            </a>
             <button type="button" class="btn btn-link navbar-btn" data-toggle="modal" data-target="#createCupboardModal">
                 <i class="fas fa-plus font-xxl"></i>
             </button>
