@@ -40,12 +40,12 @@ function loginForUser($username, $password, $db)
 
 function signUp($name, $email, $password, $db)
 {
-    $signUpStmt = $db->prepare('INSERT INTO pantry.person (name, email, password) VALUES(:name, :email, :password) RETURNING id');
+    $signUpStmt = $db->prepare('INSERT INTO pantry.person (name, email, password) VALUES(:name, :email, :password)');
     $signUpStmt->bindParam(':name', $name, PDO::PARAM_STR);
     $signUpStmt->bindParam(':email', $email, PDO::PARAM_STR);
     $signUpStmt->bindParam(':password', $password, PDO::PARAM_STR);
-    $userId = $signUpStmt->execute();
-    //$db->lastInsertId('person_id_seq'); //if not seq might be 'pantry.person_id_seq';
+    $signUpStmt->execute();
+    $userId = $db->lastInsertId('pantry.person_id_seq'); //if not seq might be 'pantry.person_id_seq';
     echo "<script type='text/javascript'>alert('$userId');</script>";
     return $userId;
 }
