@@ -13,21 +13,15 @@ if (isset($_GET["signup"])) {
         $error = true;
         $message = "Missing information in sign up. Try again";
     }
-} else {
-    if (isset($_POST["username"]) && isset($_POST["password"])) {
-        $userId = loginForUser($_POST["username"], $_POST["password"], $db);
-        if (isset($userId)) {
-            header("Location: pantry.php?id=" . $userId);
-        } else {
-            $error = true;
-            $message = "Incorrect Username/Password. Try again";
-        }
-    }else {
+} else if (isset($_POST["username"]) && isset($_POST["password"])) {
+    $userId = loginForUser($_POST["username"], $_POST["password"], $db);
+    if (isset($userId)) {
+        header("Location: pantry.php?id=" . $userId);
+    } else {
         $error = true;
         $message = "Incorrect Username/Password. Try again";
     }
 }
-
 
 
 if (isset($_GET["error"]) || $error) {
@@ -60,7 +54,7 @@ if (isset($_GET["error"]) || $error) {
             <input type="text" class="form-control" name="username" placeholder="Username"
                    autofocus="" required/>
             <input type="email" class="form-control" name="email" placeholder="Email Address"
-                   autofocus=""  required/>
+                   autofocus="" required/>
 
             <input type="password" class="form-control" name="password" placeholder="Password" required/>
             <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign Up">
