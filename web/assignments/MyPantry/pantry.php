@@ -25,6 +25,10 @@ $quantityTypes = getQuantityTypes();
 ////debuggers:
 //$message =  $_SESSION["cupboardDesc"][16] . ': ' . $items[0]["cupboard_id"];
 //echo "<script type='text/javascript'>alert('$message');</script>";
+
+$cupboardId = $items[0]["cupboard_id"];
+require 'itemModal.php';
+require 'cupboardModal.php';
 ?>
     <nav class="navbar navbar-dark bg-dark">
         <div class="d-flex">
@@ -40,6 +44,9 @@ $quantityTypes = getQuantityTypes();
             <button type="button" class="btn btn-link navbar-btn" data-toggle="modal" data-target="#createCupboardModal">
                 <i class="fas fa-plus font-xxl"></i>
             </button>
+                <?php
+                require 'cupboardModal.php';
+                ?>
         </div>
 </div>
 <div class="nav navbar-nav navbar-right">
@@ -48,7 +55,6 @@ $quantityTypes = getQuantityTypes();
 
 </nav>
 <?php
-require 'cupboardModal.php';
 require 'cupboard.php';
 ?>
 

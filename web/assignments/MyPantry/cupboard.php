@@ -37,7 +37,3 @@
     }
     ?>
 </div>
-<?php
-$cupboardId = $items[0]["cupboard_id"];
-require 'itemModal.php'
-?>
