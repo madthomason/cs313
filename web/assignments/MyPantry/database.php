@@ -45,8 +45,9 @@ function signUp($name, $email, $password, $db)
     $signUpStmt->bindParam(':email', $email, PDO::PARAM_STR);
     $signUpStmt->bindParam(':password', $password, PDO::PARAM_STR);
     $signUpStmt->execute();
-
-    return $db->lastInsertId('person_id_seq'); //if not seq might be 'pantry.person_id_seq';
+    $userId = $db->lastInsertId('person_id_seq'); //if not seq might be 'pantry.person_id_seq';
+    echo "<script type='text/javascript'>alert('$userId');</script>";
+    return $userId;
 }
 
 function getUser($id, $db)
