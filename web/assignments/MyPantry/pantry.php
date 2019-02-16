@@ -40,9 +40,6 @@ $quantityTypes = getQuantityTypes();
             <button type="button" class="btn btn-link navbar-btn" data-toggle="modal" data-target="#createCupboardModal">
                 <i class="fas fa-plus font-xxl"></i>
             </button>
-                <?php
-                require 'cupboardModal.php'
-                ?>
         </div>
 </div>
 <div class="nav navbar-nav navbar-right">
@@ -51,6 +48,7 @@ $quantityTypes = getQuantityTypes();
 
 </nav>
 <?php
+require 'cupboardModal.php';
 require 'cupboard.php';
 ?>
 

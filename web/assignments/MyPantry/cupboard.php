@@ -11,10 +11,6 @@
             <button type="button" class="btn btn-link" data-toggle="modal" data-target="#createItemModal">
                 <i class="fas fa-plus font-xxl"></i>
             </button>
-            <?php
-            $cupboardId = $items[0]["cupboard_id"];
-            require 'itemModal.php'
-            ?>
 
         </div>
     </div>
@@ -41,3 +37,7 @@
     }
     ?>
 </div>
+<?php
+$cupboardId = $items[0]["cupboard_id"];
+require 'itemModal.php'
+?>
