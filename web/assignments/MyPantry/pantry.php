@@ -38,14 +38,14 @@ $quantityTypes = getQuantityTypes();
             }
             ?>
             <a data-placement="bottom" data-toggle="popover" data-title="Login" data-container="body" type="button" data-html="true" href="#" id="login">
-                <i class="fas fa-plus font-xxl"></i>
-            </a>
 
-            <div id="popover-content" class="hide">
+            </a>
+            <button type="button" class="btn btn-link navbar-btn" data-toggle="modal" data-target="#createCupboardModal">
+                <i class="fas fa-plus font-xxl"></i>
+            </button>
                 <?php
-                require 'itemModal.php'
+                require 'cupboardModal.php'
                 ?>
-            </div>
         </div>
 </div>
 <div class="nav navbar-nav navbar-right">

@@ -8,16 +8,13 @@
     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
         <div class="card d-flex justify-content-center align-items-center h-100">
 
-            <a data-placement="bottom" data-toggle="popover" data-title="Login" data-container="body" type="button" data-html="true" href="#" id="login">
+            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#createItemModal">
                 <i class="fas fa-plus font-xxl"></i>
-            </a>
-
-                    <div id="popover-content" class="hide">
-                        <?php
-                        $cupboardId = $items[0]["cupboard_id"];
-                        require 'itemModal.php'
-                        ?>
-                    </div>
+            </button>
+            <?php
+            $cupboardId = $items[0]["cupboard_id"];
+            require 'itemModal.php'
+            ?>
 
         </div>
     </div>
