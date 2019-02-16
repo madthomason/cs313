@@ -3,8 +3,11 @@ include 'header.php';
 if (isset($_GET["signup"])) {
     if (isset($_POST["username"]) && isset($_POST["email"]) && isset($_POST["password"])) {
         $userId = signUp($_POST["username"], $_POST["email"], $_POST["password"], $db);
+        echo "<script type='text/javascript'>alert('$userId');</script>";
         if (isset($userId)) {
+            flush();
             header("Location: pantry.php?id=" . $userId);
+            die();
         } else {
             $error = true;
             $message = "Error in sign up. Please Try again";
