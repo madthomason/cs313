@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4aea913b-19c4-44bf-94f4-65b95af4d12b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/assignments/MyPantry/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/MyPantry/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/MyPantry/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/MyPantry/login.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +18,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/MyPantry/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+            <state relative-caret-position="323">
+              <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assignments/MyPantry/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-476">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -57,15 +65,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="11" column="86" selection-start-line="11" selection-start-column="86" selection-end-line="11" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assignments/MyPantry/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -219,12 +218,12 @@
       <workItem from="1549658734377" duration="28561000" />
       <workItem from="1549899621767" duration="2093000" />
       <workItem from="1549993217149" duration="9591000" />
-      <workItem from="1550248025013" duration="5869000" />
+      <workItem from="1550248025013" duration="7812000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129078000" />
+    <option name="totallyTimeSpent" value="131021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -253,6 +252,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/assignments/MyPantry/login.php</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/cs313-teach/Teach01/teach01.html">
@@ -453,15 +463,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignments/MyPantry/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="-476">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assignments/MyPantry/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+        <state relative-caret-position="323">
+          <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
         </state>
       </provider>
     </entry>
