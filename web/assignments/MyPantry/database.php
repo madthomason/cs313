@@ -42,7 +42,7 @@ function signUp($name, $email, $password, $db)
 {
     $signUpStmt = $db->prepare('INSERT INTO pantry.person (name, email, password) VALUES(:name, :email, :password)');
     $signUpStmt->bindParam(':name', $name, PDO::PARAM_STR);
-    $signUpStmt->bindParam(':login', $email, PDO::PARAM_STR);
+    $signUpStmt->bindParam(':email', $email, PDO::PARAM_STR);
     $signUpStmt->bindParam(':password', $password, PDO::PARAM_STR);
     $signUpStmt->execute();
 

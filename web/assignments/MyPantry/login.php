@@ -16,7 +16,9 @@ if (isset($_GET["signup"])) {
 } else if (isset($_POST["username"]) && isset($_POST["password"])) {
     $userId = loginForUser($_POST["username"], $_POST["password"], $db);
     if (isset($userId)) {
+        flush();
         header("Location: pantry.php?id=" . $userId);
+        die();
     } else {
         $error = true;
         $message = "Incorrect Username/Password. Try again";
