@@ -74,7 +74,7 @@ function createCupboard($personId, $name, $description, $db) {
 }
 
 function updateCupboard($id, $name, $description, $db) {
-    $updateCupboardsStmt = $db->prepare('UPDATE pantry.item SET name=:name, description=:description WHERE id=:id');
+    $updateCupboardsStmt = $db->prepare('UPDATE pantry.cupboard SET name=:name, description=:description WHERE id=:id');
     $updateCupboardsStmt->bindParam(':name', $name, PDO::PARAM_STR);
     $updateCupboardsStmt->bindParam(':description', $description, PDO::PARAM_STR);
     $updateCupboardsStmt->bindParam(':id', $id, PDO::PARAM_INT);
