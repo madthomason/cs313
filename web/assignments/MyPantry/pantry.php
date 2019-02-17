@@ -15,6 +15,11 @@ if (isset($_GET["id"])) {
 
 } else if (isset($_GET["cupboardId"])) {
     $items = getItems($_GET["cupboardId"], $db);
+    if (!isset($items)) {
+        $cupboardId = $_GET["cupboardId"];
+    } else {
+        $cupboardId = $items[0]["cupboard_id"];
+    }
 } else {
     flush();
     header("Location: login.php?error=true");
@@ -28,7 +33,7 @@ $quantityTypes = getQuantityTypes();
 //$message =  $_SESSION["cupboardDesc"][16] . ': ' . $items[0]["cupboard_id"];
 //echo "<script type='text/javascript'>alert('$message');</script>";
 
-$cupboardId = $items[0]["cupboard_id"];
+
 require 'itemModal.php';
 require 'cupboardModal.php';
 ?>

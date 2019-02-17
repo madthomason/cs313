@@ -1,6 +1,6 @@
 <div>
     <?php
-    echo '<h5>' . $_SESSION["cupboardDesc"][$items[0]["cupboard_id"]] . '</h5>';
+    echo '<h5>' . $_SESSION["cupboardDesc"][$cupboardId] . '</h5>';
     ?>
 
 </div>
@@ -9,7 +9,7 @@
         <div class="card d-flex justify-content-center align-items-center h-100">
 
             <button type="button" class="btn btn-link" data-toggle="modal" data-target="#createItemModal"
-                <?php if (isset($_SESSION["cupboards"])){echo "disabled";}?>>
+                <?php if (!isset($_SESSION["cupboards"])){echo "disabled";}?>>
                 <i class="fas fa-plus font-xxl"></i>
             </button>
 
