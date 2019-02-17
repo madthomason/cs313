@@ -21,8 +21,7 @@
                         <div class="cupboard d-flex">
                             Cupboard: <select name="cupboard_id" class="form-control">
                                 <?php
-                                $message =  "cupboard: " . $cupboardId;
-                                echo "<script type='text/javascript'>alert('$message');</script>";
+
                                 foreach($cupboards as $cupboard) {
                                     echo '<option value="' . $cupboard["id"] . '"';
                                     if ($cupboard["id"] == $cupboardId) {
@@ -35,9 +34,9 @@
                         </div>
                         Item Name: <input type="text" name="name" placeholder="Name" class="form-control">
                         Quantity: <input type="number" name="quantity" min="0" class="form-control">
-                        Restock Quantity: <input type="number" name="restock" min="0" class="form-control">
+                        Restock Quantity: <input type="number" name="restock_quantity" min="0" class="form-control">
 
-                        Quantity Type: <select name="quantityType" class="form-control">
+                        Quantity Type: <select name="quantity_type" class="form-control">
                             <?php
                             foreach($quantityTypes as $id => $quantityType) {
                                 echo "<option value='$id'>$quantityType</option>";
