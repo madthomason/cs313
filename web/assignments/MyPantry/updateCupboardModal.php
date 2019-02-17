@@ -4,7 +4,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Update <?php echo $cupboards[$cupboardId]["name"]; ?></h5>
+                <h5 class="modal-title" id="exampleModalLabel">Update Cupboard</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -13,8 +13,7 @@
                 <form role="form" action="insertUpdate.php?cupboard=update" method="post" id="updateCupboard">
                     <div class="form-group">
                         <input name="cupboard_id" type="hidden" value="<?php echo $cupboardId; ?>">
-                        <input name="name" type="text" placeholder="<?php echo $cupboards[$cupboardId]["name"]; ?>" class="form-control"
-                               value="<?php echo $cupboards[$cupboardId]["name"]; ?>">
+                        <input name="name" type="text" placeholder="Name" class="form-control">
                         <textarea name="description" placeholder="Description" class="form-control"></textarea>
                     </div>
                 </form>
