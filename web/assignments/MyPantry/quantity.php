@@ -5,6 +5,8 @@
  * Date: 2/8/2019
  * Time: 5:54 PM
  */
+require_once 'database.php';
+$db = getDb();
 if (isset($_GET["id"])) {
     if (isset($_GET["add"])) {
         if ($_GET["type"] == "add"){

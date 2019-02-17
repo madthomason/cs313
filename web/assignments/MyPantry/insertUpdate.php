@@ -5,6 +5,7 @@
  * Date: 2/14/2019
  * Time: 10:59 AM
  */
+require_once 'database.php';
 $db = getDb();
 session_start();
 
