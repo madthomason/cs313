@@ -21,6 +21,8 @@
                         <div class="cupboard d-flex">
                             Cupboard: <select name="cupboard_id" class="form-control">
                                 <?php
+                                $message =  "cupboard: " . $cupboardId;
+                                echo "<script type='text/javascript'>alert('$message');</script>";
                                 foreach($cupboards as $cupboard) {
                                     echo '<option value="' . $cupboard["id"] . '"';
                                     if ($cupboard["id"] == $cupboardId) {
