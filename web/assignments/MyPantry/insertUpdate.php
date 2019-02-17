@@ -6,6 +6,7 @@
  * Time: 10:59 AM
  */
 $db = getDb();
+session_start();
 
 if (isset($_GET["item"])) {
     createItem($_POST["cupboard_id"], $_POST["name"], $_POST["quantity_type"], $_POST["quantity"], $_POST["restock_quantity"], $db);
@@ -15,8 +16,11 @@ if (isset($_GET["item"])) {
     } else if ($_GET["cupboard"] == "update") {
         updateCupboard($_POST["cupboard_id"], $_POST["name"], $_POST["description"], $db);
     }
-
 }
+
+flush();
+header("Location: pantry.php?id=" . $_SESSION["user"]["id"]);
+die();
 
 
 

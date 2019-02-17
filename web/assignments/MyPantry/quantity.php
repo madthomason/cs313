@@ -9,8 +9,15 @@ if (isset($_GET["id"])) {
     if (isset($_GET["add"])) {
         if ($_GET["type"] == "add"){
             $updateItemsStmt = $db->prepare('UPDATE pantry.item SET quantity = quantity + 1 WHERE id=:id ');
+            $updateItemsStmt->bindParam(":id", $_GET["id"], PDO::PARAM_INT);
+            $updateItemsStmt->execute();
         } else if ($_GET["type"] == "remove"){
             $updateItemsStmt = $db->prepare('UPDATE pantry.item SET quantity = quantity - 1 WHERE id=:id ');
+            $updateItemsStmt->bindParam(":id", $_GET["id"], PDO::PARAM_INT);
+            $updateItemsStmt->execute();
         }
     }
 }
+flush();
+header("Location: pantry.php?id=" . $_SESSION["user"]["id"]);
+die();

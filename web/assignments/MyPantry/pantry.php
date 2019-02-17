@@ -16,7 +16,9 @@ if (isset($_GET["id"])) {
 } else if (isset($_GET["cupboardId"])) {
     $items = getItems($_GET["cupboardId"], $db);
 } else {
+    flush();
     header("Location: login.php?error=true");
+    die();
 }
 $cupboards = $_SESSION["cupboards"];
 

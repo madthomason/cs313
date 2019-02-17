@@ -66,7 +66,7 @@ function getCupboards($userId, $db)
 }
 
 function createCupboard($personId, $name, $description, $db) {
-    $createCupboardStmt = $db->prepare('INSERT INTO pantry.cupboard (person_id, name, description) VALUES(:password, :name, :description)');
+    $createCupboardStmt = $db->prepare('INSERT INTO pantry.cupboard (person_id, name, description) VALUES(:person_id, :name, :description)');
     $createCupboardStmt->bindParam(':person_id', $personId, PDO::PARAM_INT);
     $createCupboardStmt->bindParam(':name', $name, PDO::PARAM_STR);
     $createCupboardStmt->bindParam(':description', $description, PDO::PARAM_STR);
@@ -75,9 +75,9 @@ function createCupboard($personId, $name, $description, $db) {
 
 function updateCupboard($id, $name, $description, $db) {
     $updateCupboardsStmt = $db->prepare('UPDATE pantry.item SET name=:name, description=:description WHERE id=:id');
-    $updateCupboardsStmt->bindParam(':id', $id, PDO::PARAM_INT);
     $updateCupboardsStmt->bindParam(':name', $name, PDO::PARAM_STR);
     $updateCupboardsStmt->bindParam(':description', $description, PDO::PARAM_STR);
+    $updateCupboardsStmt->bindParam(':id', $id, PDO::PARAM_INT);
     $updateCupboardsStmt->execute();
 }
 
@@ -90,8 +90,9 @@ function getItems($cupboardId, $db)
 }
 
 function createItem($cupboardId, $name, $quantity_type_id, $quantity, $restock_quantity, $db) {
-    $signUpStmt = $db->prepare('INSERT INTO pantry.item (cupboardId, name, quantity_type_id, quantity, restock_quantity) VALUES(:cupboardId, :name, :quantity_type_id, :quantity, :restock_quantity)');
-    $signUpStmt->bindParam(':cupboardId', $cupboardId, PDO::PARAM_INT);
+    $signUpStmt = $db->prepare('INSERT INTO pantry.item (cupboard_id, name, quantity_type_id, quantity, restock_quantity) 
+                                                  VALUES(:cupboard_id, :name, :quantity_type_id, :quantity, :restock_quantity)');
+    $signUpStmt->bindParam(':cupboard_id', $cupboardId, PDO::PARAM_INT);
     $signUpStmt->bindParam(':name', $name, PDO::PARAM_STR);
     $signUpStmt->bindParam(':quantity_type_id', $quantity_type_id, PDO::PARAM_INT);
     $signUpStmt->bindParam(':quantity', $quantity, PDO::PARAM_INT);
