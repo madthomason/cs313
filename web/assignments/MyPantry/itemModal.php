@@ -1,11 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Madeline Barlocker
- * Date: 2/4/2019
- * Time: 10:06 AM
- */
-?>
 <div class="modal fade" id="createItemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">

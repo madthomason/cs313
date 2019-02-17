@@ -35,6 +35,7 @@ $quantityTypes = getQuantityTypes();
 
 require 'itemModal.php';
 require 'cupboardModal.php';
+require_once 'updateCupboardModal.php';
 ?>
 <nav class="navbar navbar-dark bg-dark">
     <div class="d-flex">

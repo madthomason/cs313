@@ -1,4 +1,5 @@
-<div class="modal fade" id="createCupboardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+
+<div class="modal fade" id="updateCupboardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -9,19 +10,19 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form role="form" action="insertUpdate.php?cupboard=insert" method="post" id="createCupboard">
+                <form role="form" action="insertUpdate.php?cupboard=update" method="post" id="updateCupboard">
                     <div class="form-group">
-                        <input name="person_id" type="hidden" value="<?php echo $_SESSION["user"]["id"]; ?>">
-                        <input name="name" type="text" placeholder="Name" class="form-control">
+                        <input name="cupboard_id" type="hidden" value="<?php echo $cupboardId; ?>">
+                        <input name="name" type="text" placeholder="<?php echo $cupboardId; ?>" class="form-control"
+                               value="<?php echo $cupboards[$cupboardId]["name"]; ?>">
                         <textarea name="description" placeholder="Description" class="form-control"></textarea>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <input type="submit" class="btn btn-primary" value="Create Cupboard" form="createCupboard">
+                <input type="submit" class="btn btn-primary" value="Create Cupboard" form="updateCupboard">
             </div>
         </div>
     </div>
 </div>
-

@@ -2,7 +2,10 @@
     <?php
     echo '<h5>' . $_SESSION["cupboardDesc"][$cupboardId] . '</h5>';
     ?>
-
+    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#updateCupboardModal"
+        <?php if (!isset($_SESSION["cupboards"])){echo "disabled";}?>>
+        <i class="fas fa-pencil-alt"></i>
+    </button>
 </div>
 <div class="row w-100 m-0 p-3">
     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">

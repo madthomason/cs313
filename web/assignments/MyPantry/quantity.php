@@ -7,6 +7,7 @@
  */
 require_once 'database.php';
 $db = getDb();
+session_start();
 if (isset($_GET["id"])) {
     if (isset($_GET["add"])) {
         if ($_GET["type"] == "add"){
