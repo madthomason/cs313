@@ -7,8 +7,7 @@
  */
 require 'header.php';
 
-if (isset($_GET["id"])) {
-    $_SESSION["user"] = getUser($_GET["id"], $db);
+if (isset($_SESSION["user"])) {
     //Get the cupboards
     $_SESSION["cupboards"] = getCupboards($_SESSION["user"]["id"], $db);
     $cupboardId = $_SESSION["cupboards"][0]["id"];
@@ -24,6 +23,7 @@ if (isset($_GET["id"])) {
     header("Location: login.php?error=true");
     die();
 }
+
 $cupboards = $_SESSION["cupboards"];
 
 $quantityTypes = getQuantityTypes();
@@ -57,7 +57,7 @@ require_once 'updateCupboardModal.php';
     </div>
     </div>
     <div class="nav navbar-nav navbar-right">
-        <a href="login.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        <a href="login.php?logout=true"><i class="fas fa-sign-out-alt"></i> Logout</a>
     </div>
 
 </nav>

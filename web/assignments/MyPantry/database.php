@@ -29,11 +29,10 @@ function getDb()
     return $db;
 }
 
-function loginForUser($username, $password, $db)
+function loginForUser($username, $db)
 {
-    $loginStmt = $db->prepare('SELECT id FROM pantry.person WHERE (name=:login OR email=:login) AND password=:password');
+    $loginStmt = $db->prepare('SELECT id, name, password FROM pantry.person WHERE (name=:login OR email=:login)');
     $loginStmt->bindParam(':login', $username, PDO::PARAM_STR);
-    $loginStmt->bindParam(':password', $password, PDO::PARAM_STR);
     $loginStmt->execute();
     return $loginStmt->fetch(PDO::FETCH_ASSOC);
 }
@@ -46,13 +45,13 @@ function signUp($name, $email, $password, $db)
     $signUpStmt->bindParam(':password', $password, PDO::PARAM_STR);
     $signUpStmt->execute();
     $userId = $db->lastInsertId('pantry.person_id_seq');
-    echo "<script type='text/javascript'>alert('$userId');</script>";
-    return $userId;
+
+    return getUser($userId, $db);
 }
 
 function getUser($id, $db)
 {
-    $userStmt = $db->prepare('SELECT * FROM pantry.person WHERE id=:id');
+    $userStmt = $db->prepare('SELECT id, name, email, password FROM pantry.person WHERE id=:id');
     $userStmt->bindParam(':id', $id, PDO::PARAM_INT);
     $userStmt->execute();
     return $userStmt->fetch(PDO::FETCH_ASSOC);
@@ -83,7 +82,8 @@ function updateCupboard($id, $name, $description, $db) {
 
 function getItems($cupboardId, $db)
 {
-    $itemsStmt = $db->prepare('SELECT * FROM pantry.item WHERE cupboard_id=:cupboardId');
+    $itemsStmt = $db->prepare('SELECT id, cupboard_id, name, quantity_type_id, quantity, restock_quantity 
+                               FROM pantry.item WHERE cupboard_id=:cupboardId');
     $itemsStmt->bindParam(':cupboardId', $cupboardId, PDO::PARAM_INT);
     $itemsStmt->execute();
     return $itemsStmt->fetchAll(PDO::FETCH_ASSOC);
@@ -111,8 +111,47 @@ function getQuantityTypes()
     return $quantityTypes;
 }
 
+function getItemsForRestock($userId, $db) {
+    $itemsStmt = $db->prepare('SELECT id, cupboard_id, name, quantity_type_id, quantity, restock_quantity 
+                               FROM pantry.item AS i JOIN pantry.cupboard AS c ON c.id = i.cupboard_id
+                               WHERE c.person_id = :personId AND i.notification = 0 AND i.quantity < i.restock_quantity');
+    $itemsStmt->bindParam(':personId', $userId, PDO::PARAM_INT);
+    $itemsStmt->execute();
+    return $itemsStmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function flagItemNotification($items, $db) {
+    //Derived from https://stackoverflow.com/questions/920353/can-i-bind-an-array-to-an-in-condition
+    $inQuery = implode(',', array_fill(0, count($items), '?'));
+    //notification might be a date time: check this
+    $updateItemsStmt = $db->prepare('UPDATE pantry.item SET notification = 1 WHERE id IS IN(' . $inQuery . ') ');
+    foreach ($items as $k => $id) {
+        $updateItemsStmt->bindValue(($k+1), $id);
+    }
+    $updateItemsStmt->execute();
+}
 
 
-//$updateItemsStmt = $db->prepare('UPDATE pantry.item SET quantity = quantity + 1 WHERE id=: ');
-//$updateCupboardsStmt = $db->prepare('UPDATE pantry.item SET name=:name, description=:description WHERE id=: ');
+function emailNotifications($user, $db) {
+    $quantity_types = getQuantityTypes();
+    $items = getItemsForRestock($user["id"], $db);
+    if (isset($items)){
+        $count = count($items);
+        // the message
+        $msg = "The following items have reached your restock quantity: \n";
+
+        foreach ($items as $item) {
+            $msg .= $item["name"] . " - " . $item["quantity"] . " " . $quantity_types[$item["quantity_type"]] . " \n";
+        }
+
+        // use wordwrap() if lines are longer than 70 characters
+        $msg = wordwrap($msg,70);
+
+        // send email
+        mail($user["email"],"Restock $count Items",$msg);
+    } else {
+        //no items return 0?
+    }
+
+}
 

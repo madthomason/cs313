@@ -1,12 +1,17 @@
 <?php
 include 'header.php';
+if (isset($_GET["logout"])) {
+    session_destroy();
+}
 if (isset($_GET["signup"])) {
     if (isset($_POST["username"]) && isset($_POST["email"]) && isset($_POST["password"])) {
-        $userId = signUp($_POST["username"], $_POST["email"], $_POST["password"], $db);
+        $passwordHash = password_hash($_POST["password"], PASSWORD_DEFAULT);
+        $user = signUp($_POST["username"], $_POST["email"], $passwordHash, $db);
 
-        if (isset($userId)) {
+        if (isset($user)) {
+            $_SESSION["user"] = $user;
             flush();
-            header("Location: pantry.php?id=" . $userId);
+            header("Location: pantry.php?");
             die();
         } else {
             $error = true;
@@ -17,11 +22,18 @@ if (isset($_GET["signup"])) {
         $message = "Missing information in sign up. Try again";
     }
 } else if (isset($_POST["username"]) && isset($_POST["password"])) {
-    $userId = loginForUser($_POST["username"], $_POST["password"], $db);
-    if (isset($userId)) {
+
+    $user = loginForUser($_POST["username"], $db);
+
+    if (isset($user) && password_verify($_POST["password"], $user["password"])) {
+        // Correct Password
+        $_SESSION["user"] = $user;
+
         flush();
-        header("Location: pantry.php?id=" . $userId);
+        header("Location: pantry.php?");
         die();
+
+
     } else {
         $error = true;
         $message = "Incorrect Username/Password. Try again";
