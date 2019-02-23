@@ -114,7 +114,7 @@ function getQuantityTypes()
 function getItemsForRestock($userId, $db) {
     $itemsStmt = $db->prepare('SELECT i.id, i.cupboard_id, i.name, i.quantity_type_id, i.quantity, i.restock_quantity 
                                FROM pantry.item AS i JOIN pantry.cupboard AS c ON c.id = i.cupboard_id
-                               WHERE c.person_id = :personId AND i.notification != CURRENT_DATE AND i.quantity <= i.restock_quantity');
+                               WHERE c.person_id = :personId AND (i.notification != CURRENT_DATE OR i.notification IS NULL) AND i.quantity <= i.restock_quantity');
     $itemsStmt->bindParam(':personId', $userId, PDO::PARAM_INT);
     $itemsStmt->execute();
     return $itemsStmt->fetchAll(PDO::FETCH_ASSOC);
