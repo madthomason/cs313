@@ -1,7 +1,4 @@
-<!--<div --><?php //if (isset($_SESSION["cupboards"])){echo "style='display: hidden;'";}?><!---->
-<!--    <h1>Please add a cupboard to hold items</h1>-->
-<!--</div>-->
-<!--<div <?php //if (!isset($_SESSION["cupboards"])){echo "style='display: hidden;'";}?>>-->
+
 <div>
     <div<?php if (empty($_SESSION["cupboards"])){echo " style='display: none;'";}?> class="d-flex justify-content-center">
         <?php
