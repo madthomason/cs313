@@ -23,5 +23,5 @@ if (isset($_GET["id"])) {
     }
 }
 flush();
-header("Location: pantry.php?id=" . $_SESSION["user"]["id"]);
+header("Location: pantry.php");
 die();
