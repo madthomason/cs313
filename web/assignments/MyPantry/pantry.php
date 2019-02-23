@@ -24,7 +24,7 @@ if (isset($_SESSION["user"])) {
     die();
 }
 
-$cupboards = $_SESSION["cupboards"];
+$cupboards = empty($_SESSION["cupboards"]);
 echo "<script type='text/javascript'>alert('$cupboards');</script>";
 //$quantityTypes = getQuantityTypes();
 

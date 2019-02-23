@@ -3,12 +3,12 @@
 <!--</div>-->
 <!--<div <?php //if (!isset($_SESSION["cupboards"])){echo "style='display: hidden;'";}?>>-->
 <div>
-    <div<?php if (!isset($_SESSION["cupboards"])){echo "style='display: hidden;'";}?>>
+    <div<?php if (!empty($_SESSION["cupboards"])){echo "style='display: hidden;'";}?>>
         <?php
         echo '<h5>' . $_SESSION["cupboardDesc"][$cupboardId] . '</h5>';
         ?>
         <button type="button" class="btn btn-link" data-toggle="modal" data-target="#updateCupboardModal"
-            <?php if (!isset($_SESSION["cupboards"])){echo "disabled";}?>>
+            <?php if (!empty($_SESSION["cupboards"])){echo "disabled";}?>>
             <i class="fas fa-pencil-alt"></i>
         </button>
     </div>
