@@ -112,7 +112,7 @@ function getQuantityTypes()
 }
 
 function getItemsForRestock($userId, $db) {
-    $itemsStmt = $db->prepare('SELECT id, cupboard_id, name, quantity_type_id, quantity, restock_quantity 
+    $itemsStmt = $db->prepare('SELECT i.id, i.cupboard_id, i.name, i.quantity_type_id, i.quantity, i.restock_quantity 
                                FROM pantry.item AS i JOIN pantry.cupboard AS c ON c.id = i.cupboard_id
                                WHERE c.person_id = :personId AND i.notification != CURRENT_DATE AND i.quantity <= i.restock_quantity');
     $itemsStmt->bindParam(':personId', $userId, PDO::PARAM_INT);
@@ -124,7 +124,7 @@ function flagItemNotification($items, $db) {
     //Derived from https://stackoverflow.com/questions/920353/can-i-bind-an-array-to-an-in-condition
     $inQuery = implode(',', array_fill(0, count($items), '?'));
     //Set notification to today
-    $updateItemsStmt = $db->prepare('UPDATE pantry.item SET notification = CURRENT_DATE WHERE id IS IN(' . $inQuery . ') ');
+    $updateItemsStmt = $db->prepare('UPDATE pantry.item SET notification = CURRENT_DATE WHERE id IN(' . $inQuery . ') ');
     foreach ($items as $k => $id) {
         $updateItemsStmt->bindValue(($k+1), $id);
     }

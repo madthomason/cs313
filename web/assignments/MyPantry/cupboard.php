@@ -3,13 +3,18 @@
 <!--</div>-->
 <!--<div <?php //if (!isset($_SESSION["cupboards"])){echo "style='display: hidden;'";}?>>-->
 <div>
-    <div<?php if (empty($_SESSION["cupboards"])){echo " style='display: none;'";}?>>
+    <div<?php if (empty($_SESSION["cupboards"])){echo " style='display: none;'";}?> class="d-flex justify-content-center">
         <?php
         echo '<h5>' . $_SESSION["cupboardDesc"][$cupboardId] . '</h5>';
         ?>
         <button type="button" class="btn btn-link" data-toggle="modal" data-target="#updateCupboardModal">
             <i class="fas fa-pencil-alt"></i>
         </button>
+    </div>
+    <div<?php if (!empty($_SESSION["cupboards"])){echo " style='display: none;'";}?>>
+        <i class="fas fa-arrow-up"></i>
+        <h2>Please add a cupboard above</h2>
+        <i class="fas fa-arrow-up"></i>
     </div>
     <div class="row w-100 m-0 p-3">
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
