@@ -25,8 +25,8 @@ if (isset($_SESSION["user"])) {
 }
 
 $cupboards = $_SESSION["cupboards"];
-
-$quantityTypes = getQuantityTypes();
+echo "<script type='text/javascript'>alert('$cupboards');</script>";
+//$quantityTypes = getQuantityTypes();
 
 ////debuggers:
 //$message =  $_SESSION["cupboardDesc"][16] . ': ' . $items[0]["cupboard_id"];
