@@ -7,7 +7,7 @@
  */
 require 'header.php';
 
-if (isset($_SESSION["user"])) {
+if (isset($_SESSION["user"]) && !isset($_GET["cupboardId"])) {
     //Get the cupboards
     $_SESSION["cupboards"] = getCupboards($_SESSION["user"]["id"], $db);
     $cupboardId = $_SESSION["cupboards"][0]["id"];
@@ -34,7 +34,7 @@ $quantityTypes = getQuantityTypes();
 
 require 'itemModal.php';
 require 'cupboardModal.php';
-require_once 'updateCupboardModal.php';
+require 'updateCupboardModal.php';
 ?>
 <nav class="navbar navbar-dark bg-dark">
     <div class="d-flex">
