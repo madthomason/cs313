@@ -31,3 +31,5 @@ SET search_path TO pantry, public;
  restock_quantity      real,
  notification  date);
 
+ALTER TABLE pantry.person ADD COLUMN password TYPE VARCHAR(20);
+ALTER TABLE pantry.person ALTER COLUMN password TYPE VARCHAR(255);

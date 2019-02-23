@@ -11,7 +11,7 @@ if (isset($_GET["signup"])) {
         if (isset($user)) {
             $_SESSION["user"] = $user;
             flush();
-            header("Location: pantry.php?");
+            header("Location: pantry.php");
             die();
         } else {
             $error = true;
@@ -30,7 +30,7 @@ if (isset($_GET["signup"])) {
         $_SESSION["user"] = $user;
 
         flush();
-        header("Location: pantry.php?");
+        header("Location: pantry.php");
         die();
 
 

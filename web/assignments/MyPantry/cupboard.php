@@ -1,26 +1,31 @@
+<!--<div --><?php //if (isset($_SESSION["cupboards"])){echo "style='display: hidden;'";}?><!---->
+<!--    <h1>Please add a cupboard to hold items</h1>-->
+<!--</div>-->
+<!--<div <?php //if (!isset($_SESSION["cupboards"])){echo "style='display: hidden;'";}?>>-->
 <div>
-    <?php
-    echo '<h5>' . $_SESSION["cupboardDesc"][$cupboardId] . '</h5>';
-    ?>
-    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#updateCupboardModal"
-        <?php if (!isset($_SESSION["cupboards"])){echo "disabled";}?>>
-        <i class="fas fa-pencil-alt"></i>
-    </button>
-</div>
-<div class="row w-100 m-0 p-3">
-    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
-        <div class="card d-flex justify-content-center align-items-center h-100">
-
-            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#createItemModal"
-                <?php if (!isset($_SESSION["cupboards"])){echo "disabled";}?>>
-                <i class="fas fa-plus font-xxl"></i>
-            </button>
-
-        </div>
+    <div<?php if (!isset($_SESSION["cupboards"])){echo "style='display: hidden;'";}?>>
+        <?php
+        echo '<h5>' . $_SESSION["cupboardDesc"][$cupboardId] . '</h5>';
+        ?>
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#updateCupboardModal"
+            <?php if (!isset($_SESSION["cupboards"])){echo "disabled";}?>>
+            <i class="fas fa-pencil-alt"></i>
+        </button>
     </div>
-    <?php
-    foreach ($items as $item) {
-        echo '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
+    <div class="row w-100 m-0 p-3">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
+            <div class="card d-flex justify-content-center align-items-center h-100">
+
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#createItemModal"
+                    <?php if (!isset($_SESSION["cupboards"])){echo "disabled";}?>>
+                    <i class="fas fa-plus font-xxl"></i>
+                </button>
+
+            </div>
+        </div>
+        <?php
+        foreach ($items as $item) {
+            echo '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 p-1">
                     <div class="card h-100">
                         <div class="d-flex justify-content-around card-body">
                             <h5 class="card-title">' . $item["name"] . '</h5>
@@ -38,6 +43,7 @@
                         </div>
                     </div>
                 </div>';
-    }
-    ?>
+        }
+        ?>
+    </div>
 </div>
