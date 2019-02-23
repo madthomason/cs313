@@ -3,7 +3,7 @@
 <!--</div>-->
 <!--<div <?php //if (!isset($_SESSION["cupboards"])){echo "style='display: hidden;'";}?>>-->
 <div>
-    <div<?php if (empty($_SESSION["cupboards"])){echo "style='display: hidden;'";}?>>
+    <div<?php if (empty($_SESSION["cupboards"])){echo " style='display: hidden;'";}?>>
         <?php
         echo '<h5>' . $_SESSION["cupboardDesc"][$cupboardId] . '</h5>';
         ?>
