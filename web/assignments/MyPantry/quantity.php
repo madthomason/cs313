@@ -18,6 +18,7 @@ if (isset($_GET["id"])) {
             $updateItemsStmt = $db->prepare('UPDATE pantry.item SET quantity = quantity - 1 WHERE id=:id ');
             $updateItemsStmt->bindParam(":id", $_GET["id"], PDO::PARAM_INT);
             $updateItemsStmt->execute();
+            emailNotifications($_SESSION["user"], $db);
         }
     }
 }

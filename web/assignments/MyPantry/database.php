@@ -114,7 +114,7 @@ function getQuantityTypes()
 function getItemsForRestock($userId, $db) {
     $itemsStmt = $db->prepare('SELECT id, cupboard_id, name, quantity_type_id, quantity, restock_quantity 
                                FROM pantry.item AS i JOIN pantry.cupboard AS c ON c.id = i.cupboard_id
-                               WHERE c.person_id = :personId AND i.notification = 0 AND i.quantity < i.restock_quantity');
+                               WHERE c.person_id = :personId AND i.notification != CURRENT_DATE AND i.quantity <= i.restock_quantity');
     $itemsStmt->bindParam(':personId', $userId, PDO::PARAM_INT);
     $itemsStmt->execute();
     return $itemsStmt->fetchAll(PDO::FETCH_ASSOC);
@@ -123,8 +123,8 @@ function getItemsForRestock($userId, $db) {
 function flagItemNotification($items, $db) {
     //Derived from https://stackoverflow.com/questions/920353/can-i-bind-an-array-to-an-in-condition
     $inQuery = implode(',', array_fill(0, count($items), '?'));
-    //notification might be a date time: check this
-    $updateItemsStmt = $db->prepare('UPDATE pantry.item SET notification = 1 WHERE id IS IN(' . $inQuery . ') ');
+    //Set notification to today
+    $updateItemsStmt = $db->prepare('UPDATE pantry.item SET notification = CURRENT_DATE WHERE id IS IN(' . $inQuery . ') ');
     foreach ($items as $k => $id) {
         $updateItemsStmt->bindValue(($k+1), $id);
     }
@@ -133,24 +133,28 @@ function flagItemNotification($items, $db) {
 
 
 function emailNotifications($user, $db) {
-    $quantity_types = getQuantityTypes();
+
     $items = getItemsForRestock($user["id"], $db);
-    if (isset($items)){
+    if (!empty($items)){
         $count = count($items);
+        $quantity_types = getQuantityTypes();
         // the message
         $msg = "The following items have reached your restock quantity: \n";
 
         foreach ($items as $item) {
-            $msg .= $item["name"] . " - " . $item["quantity"] . " " . $quantity_types[$item["quantity_type"]] . " \n";
+            $msg .= $item["name"] . " - " . $item["quantity"] . " " . $quantity_types[$item["quantity_type"]] . "\r\n";
         }
 
         // use wordwrap() if lines are longer than 70 characters
-        $msg = wordwrap($msg,70);
+        $msg = wordwrap($msg,70, '\r\n');
 
         // send email
-        mail($user["email"],"Restock $count Items",$msg);
-    } else {
-        //no items return 0?
+        $sent = mail($user["email"],"$count Items Need Restocking",$msg);
+        if (!$sent) {
+            echo "<script type='text/javascript'>alert('$msg');</script>";
+        }
+
+        flagItemNotification($items, $db);
     }
 
 }
