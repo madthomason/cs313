@@ -3,12 +3,11 @@
 <!--</div>-->
 <!--<div <?php //if (!isset($_SESSION["cupboards"])){echo "style='display: hidden;'";}?>>-->
 <div>
-    <div<?php if (!empty($_SESSION["cupboards"])){echo "style='display: hidden;'";}?>>
+    <div<?php if (empty($_SESSION["cupboards"])){echo "style='display: hidden;'";}?>>
         <?php
         echo '<h5>' . $_SESSION["cupboardDesc"][$cupboardId] . '</h5>';
         ?>
-        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#updateCupboardModal"
-            <?php if (!empty($_SESSION["cupboards"])){echo "disabled";}?>>
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#updateCupboardModal">
             <i class="fas fa-pencil-alt"></i>
         </button>
     </div>
@@ -17,7 +16,7 @@
             <div class="card d-flex justify-content-center align-items-center h-100">
 
                 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#createItemModal"
-                    <?php if (!isset($_SESSION["cupboards"])){echo "disabled";}?>>
+                    <?php if (empty($_SESSION["cupboards"])){echo "disabled";}?>>
                     <i class="fas fa-plus font-xxl"></i>
                 </button>
 
