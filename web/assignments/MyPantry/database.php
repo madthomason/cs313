@@ -154,7 +154,7 @@ function emailNotifications($user, $db) {
         // send email
         $sent = mail($user["email"],"$count Items Need Restocking",$msg);
         if (!$sent) {
-            return "?msg=" + $msg;
+            return "?msg=" . $msg;
         }
 
         flagItemNotification($ids, $db);
