@@ -8,6 +8,7 @@
 require_once 'database.php';
 $db = getDb();
 session_start();
+$msg = "";
 if (isset($_GET["id"])) {
     if (isset($_GET["type"])) {
         if ($_GET["type"] == "add"){
