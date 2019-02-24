@@ -138,10 +138,12 @@ function emailNotifications($user, $db) {
     if (!empty($items)){
         $count = count($items);
         $quantity_types = getQuantityTypes();
+        $ids = array();
         // the message
         $msg = "The following items have reached your restock quantity: \n";
 
         foreach ($items as $item) {
+            $ids.array_push($item["id"]);
             $msg .= $item["name"] . " - " . $item["quantity"] . " " . $quantity_types[$item["quantity_type"]] . "\r\n";
         }
 
@@ -154,7 +156,7 @@ function emailNotifications($user, $db) {
             echo "<script type='text/javascript'>alert('$msg');</script>";
         }
 
-        flagItemNotification($items, $db);
+        flagItemNotification($ids, $db);
     }
 
 }
