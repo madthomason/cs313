@@ -125,10 +125,10 @@ function flagItemNotification($items, $db) {
     $inQuery = implode(',', array_fill(0, count($items), '?'));
     //Set notification to today
     $updateItemsStmt = $db->prepare('UPDATE pantry.item SET notification = CURRENT_DATE WHERE id IN(' . $inQuery . ') ');
-    foreach ($items as $k => $id) {
-        $updateItemsStmt->bindValue(($k+1), $id);
-    }
-    $updateItemsStmt->execute();
+//    foreach ($items as $k => $id) {
+//        $updateItemsStmt->bindValue(($k+1), $id);
+//    }
+    $updateItemsStmt->execute($items);
 }
 
 
