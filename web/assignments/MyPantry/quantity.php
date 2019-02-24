@@ -24,5 +24,5 @@ if (isset($_GET["id"])) {
     }
 }
 flush();
-header("Location: pantry.php" + $msg);
+header("Location: pantry.php" . $msg);
 die();
