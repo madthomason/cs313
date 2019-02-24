@@ -7,6 +7,11 @@
  */
 require 'header.php';
 
+if(isset($_GET["msg"])){
+    $message = $_GET["msg"];
+    echo "<script type='text/javascript'>alert('$message');</script>";
+}
+
 if (isset($_SESSION["user"]) && !isset($_GET["cupboardId"])) {
     //Get the cupboards
     $_SESSION["cupboards"] = getCupboards($_SESSION["user"]["id"], $db);

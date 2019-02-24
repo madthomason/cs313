@@ -152,10 +152,10 @@ function emailNotifications($user, $db) {
         $msg = wordwrap($msg,70, '\r\n');
 
         // send email
-       // $sent = mail($user["email"],"$count Items Need Restocking",$msg);
-       // if (!$sent) {
-            echo "<script type='text/javascript'>alert('$msg');</script>";
-       // }
+        $sent = mail($user["email"],"$count Items Need Restocking",$msg);
+        if (!$sent) {
+            return "?msg=" + $msg;
+        }
 
         flagItemNotification($ids, $db);
     }
