@@ -139,6 +139,7 @@ function emailNotifications($user, $db) {
         $count = count($items);
         $quantity_types = getQuantityTypes();
         $ids = array();
+        $sent = false;
         // the message
         $msg = "The following items have reached your restock quantity: \n";
 
@@ -151,7 +152,7 @@ function emailNotifications($user, $db) {
         $msg = wordwrap($msg,70, '\r\n');
 
         // send email
-        $sent = mail($user["email"],"$count Items Need Restocking",$msg);
+       // $sent = mail($user["email"],"$count Items Need Restocking",$msg);
         if (!$sent) {
             echo "<script type='text/javascript'>alert('$msg');</script>";
         }

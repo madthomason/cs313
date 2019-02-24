@@ -42,6 +42,10 @@ if (isset($_GET["signup"])) {
 
 
 if (isset($_GET["error"]) || $error) {
+    //If no message they have been logged out
+    if (!isset($message)){
+        $message = "You have been logged out. Please log back in.";
+    }
     //alert error
     echo "<script type='text/javascript'>alert('$message');</script>";
 }
