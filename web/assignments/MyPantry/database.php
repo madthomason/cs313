@@ -83,7 +83,7 @@ function updateCupboard($id, $name, $description, $db) {
 function getItems($cupboardId, $db)
 {
     $itemsStmt = $db->prepare('SELECT id, cupboard_id, name, quantity_type_id, quantity, restock_quantity 
-                               FROM pantry.item WHERE cupboard_id=:cupboardId');
+                               FROM pantry.item WHERE cupboard_id=:cupboardId ORDER BY id');
     $itemsStmt->bindParam(':cupboardId', $cupboardId, PDO::PARAM_INT);
     $itemsStmt->execute();
     return $itemsStmt->fetchAll(PDO::FETCH_ASSOC);
@@ -153,9 +153,9 @@ function emailNotifications($user, $db) {
 
         // send email
        // $sent = mail($user["email"],"$count Items Need Restocking",$msg);
-        if (!$sent) {
+       // if (!$sent) {
             echo "<script type='text/javascript'>alert('$msg');</script>";
-        }
+       // }
 
         flagItemNotification($ids, $db);
     }

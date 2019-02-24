@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4aea913b-19c4-44bf-94f4-65b95af4d12b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/assignments/MyPantry/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/MyPantry/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/MyPantry/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/MyPantry/login.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/MyPantry/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="141" column="22" lean-forward="true" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
+            <state relative-caret-position="470">
+              <caret line="157" column="9" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -207,12 +206,12 @@
       <workItem from="1549899621767" duration="2093000" />
       <workItem from="1549993217149" duration="9591000" />
       <workItem from="1550248025013" duration="19467000" />
-      <workItem from="1550597771192" duration="20637000" />
+      <workItem from="1550597771192" duration="21329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163313000" />
+    <option name="totallyTimeSpent" value="164005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
@@ -445,8 +444,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignments/MyPantry/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="141" column="22" lean-forward="true" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
+        <state relative-caret-position="470">
+          <caret line="157" column="9" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
         </state>
       </provider>
     </entry>
