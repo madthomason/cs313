@@ -143,7 +143,7 @@ function emailNotifications($user, $db) {
         $msg = "The following items have reached your restock quantity: \n";
 
         foreach ($items as $item) {
-            $ids.array_push($item["id"]);
+            array_push($ids, $item["id"]);
             $msg .= $item["name"] . " - " . $item["quantity"] . " " . $quantity_types[$item["quantity_type"]] . "\r\n";
         }
 
