@@ -6,7 +6,7 @@
  * Time: 5:54 PM
  */
 require_once 'database.php';
-require("../../sendgrid-php/sendgrid-php.php");
+require("../../sendgrid-php/sendgrid-php/sendgrid-php.php");
 $db = getDb();
 session_start();
 $msg = "sent!";

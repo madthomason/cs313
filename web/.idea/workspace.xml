@@ -3,6 +3,63 @@
   <component name="ChangeListManager">
     <list default="true" id="4aea913b-19c4-44bf-94f4-65b95af4d12b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/assignments/MyPantry/quantity.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/MyPantry/quantity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/TROUBLESHOOTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/USAGE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/USE_CASES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/accesssettings/accesssettings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/alerts/alerts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/apikeys/apikeys.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/asm/asm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/browsers/browsers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/campaigns/campaigns.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/categories/categories.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/clients/clients.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/contactdb/contactdb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/devices/devices.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/geo/geo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/helpers/mail/example.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/ips/ips.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/mail/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/mailboxproviders/mailboxproviders.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/mailsettings/mailsettings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/partnersettings/partnersettings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/scopes/scopes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/senders/senders.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/stats/stats.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/subusers/subusers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/suppression/suppression.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/templates/templates.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/trackingsettings/trackingsettings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/user/user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/examples/whitelabel/whitelabel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/lib/SendGrid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/lib/helpers/mail/Mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/lib/helpers/mail/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/prism/bin/prism" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/sendgrid-php.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/composer/ClassLoader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/composer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/composer/autoload_classmap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/composer/autoload_files.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/composer/autoload_namespaces.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/composer/autoload_psr4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/composer/autoload_real.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/composer/autoload_static.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/composer/installed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/sendgrid/php-http-client/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/sendgrid/php-http-client/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/sendgrid/php-http-client/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/sendgrid/php-http-client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/sendgrid/php-http-client/examples/example.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/sendgrid/php-http-client/lib/Client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendgrid-php/vendor/sendgrid/php-http-client/lib/Response.php" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,26 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/MyPantry/quantity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sendgrid-php/lib/helpers/mail/Mail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="898" column="14" lean-forward="true" selection-start-line="898" selection-start-column="14" selection-end-line="898" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sendgrid-php/lib/SendGrid.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+            <state relative-caret-position="170">
+              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -218,12 +257,12 @@
       <workItem from="1549993217149" duration="9591000" />
       <workItem from="1550248025013" duration="19467000" />
       <workItem from="1550597771192" duration="22537000" />
-      <workItem from="1551109947594" duration="10246000" />
+      <workItem from="1551109947594" duration="10629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175459000" />
+    <option name="totallyTimeSpent" value="175842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
@@ -459,13 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sendgrid-php/lib/SendGrid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sendgrid-php/lib/helpers/mail/Mail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-13">
@@ -473,10 +505,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../sendgrid-php/sendgrid-php/sendgrid-php.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sendgrid-php/sendgrid-php/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sendgrid-php/lib/SendGrid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assignments/MyPantry/quantity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        <state relative-caret-position="170">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
