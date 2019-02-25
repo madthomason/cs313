@@ -21,7 +21,7 @@ if (isset($_GET["id"])) {
             $updateItemsStmt->bindParam(":id", $_GET["id"], PDO::PARAM_INT);
             $updateItemsStmt->execute();
             //$msg = emailNotifications($_SESSION["user"], $db);
-            $email = new \SendGrid\Mail\Mail();
+            $email = new \SendGrid\Mail();
             $email->addTo($_SESSION["user"]["email"])
                 ->setFrom("tho16031@byui.edu")
                 ->setSubject("Hello World from the SendGrid PHP Library!")
