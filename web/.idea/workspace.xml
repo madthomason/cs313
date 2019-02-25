@@ -50,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/MyPantry/quantity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="246">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -209,12 +209,12 @@
       <workItem from="1549993217149" duration="9591000" />
       <workItem from="1550248025013" duration="19467000" />
       <workItem from="1550597771192" duration="22537000" />
-      <workItem from="1551109947594" duration="10776000" />
+      <workItem from="1551109947594" duration="10974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175989000" />
+    <option name="totallyTimeSpent" value="176187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
@@ -470,6 +470,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sendgrid-php/sendgrid-php/lib/mail/EmailAddress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sendgrid-php/sendgrid-php/lib/mail/Mail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -479,8 +486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignments/MyPantry/quantity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        <state relative-caret-position="246">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
