@@ -28,8 +28,11 @@ if (isset($_GET["id"])) {
             $sg = new \SendGrid(getenv('SENDGRID_API_KEY'));
 
             $response = $sg->client->mail()->send()->post($email);
-            if (!isset($response)) {
-                $msg = "notSent";
+            if ($response->statusCode() == 202) {
+                // Successfully sent
+                $msg = 'sent';
+            } else {
+                $msg = 'error';
             }
         }
     }
