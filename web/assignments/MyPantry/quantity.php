@@ -28,12 +28,12 @@ if (isset($_GET["id"])) {
             $sg = new \SendGrid(getenv('SENDGRID_API_KEY'));
 
             try {
-                $response = $sg->client->mail()->send()->post($email);
+                $response = $sg->client->mail()->send()->post(json_encode($email));
                 if ($response->statusCode() == 202) {
                     // Successfully sent
                     $msg = 'sent';
                 } else {
-                    $msg = 'error' . $response->body();
+                    $msg = $response->body();
                 }
             } catch (Exception $e){
                 $msg = 'Caught exception: ' .  $e->getMessage() . "\n";
@@ -54,7 +54,7 @@ function email() {
     $apiKey = getenv('SENDGRID_API_KEY');
     $sg = new \SendGrid($apiKey);
 
-    $response = $sg->client->mail()->send()->post($mail);
+    $response = $sg->client->mail()->send()->post(json_encode($mail));
     echo $response->statusCode();
     echo $response->headers();
     echo $response->body();
