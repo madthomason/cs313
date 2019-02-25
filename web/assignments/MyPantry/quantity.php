@@ -22,7 +22,7 @@ if (isset($_GET["id"])) {
             //$msg = emailNotifications($_SESSION["user"], $db);
             $sent = mail($_SESSION["user"]["email"],"Some Items Need Restocking", $msg);
             if (!$sent) {
-                $msg = "notSent";
+                $msg = "notSent email " . $_SESSION["user"]["email"];
             }
         }
     }
