@@ -26,12 +26,12 @@ if (isset($_GET["id"])) {
                 ->setFrom("tho16031@byui.edu")
                 ->setSubject("Hello World from the SendGrid PHP Library!")
                 ->setText("Hello, Email!");
-            
+
             $sg = new \SendGrid(getenv('SENDGRID_API_KEY'));
 
             $response = $sg->send($email);
-            if (!$sent) {
-                $msg = "notSent email " . $_SESSION["user"]["email"];
+            if (!isset($response)) {
+                $msg = "notSent";
             }
         }
     }
