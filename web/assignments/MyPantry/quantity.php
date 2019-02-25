@@ -8,7 +8,7 @@
 require_once 'database.php';
 $db = getDb();
 session_start();
-$msg = "";
+$msg = "sent!";
 if (isset($_GET["id"])) {
     if (isset($_GET["type"])) {
         if ($_GET["type"] == "add"){
@@ -19,10 +19,14 @@ if (isset($_GET["id"])) {
             $updateItemsStmt = $db->prepare('UPDATE pantry.item SET quantity = quantity - 1 WHERE id=:id ');
             $updateItemsStmt->bindParam(":id", $_GET["id"], PDO::PARAM_INT);
             $updateItemsStmt->execute();
-            $msg = emailNotifications($_SESSION["user"], $db);
+            //$msg = emailNotifications($_SESSION["user"], $db);
+            $sent = mail($_SESSION["user"]["email"],"Some Items Need Restocking", $msg);
+            if (!$sent) {
+                $msg = "notSent";
+            }
         }
     }
 }
 flush();
-header("Location: pantry.php" . $msg);
+header("Location: pantry.php?msg=" . $msg);
 die();

@@ -152,12 +152,14 @@ function emailNotifications($user, $db) {
         $msg = wordwrap($msg,70, '\r\n');
 
         // send email
-        $sent = mail($user["email"],"$count Items Need Restocking",$msg);
+        $sent = mail($user["email"],"$count Items Need Restocking", $msg);
         if (!$sent) {
-            return "?msg=" . $msg;
+            return "notSent";
         }
 
         flagItemNotification($ids, $db);
+    } else {
+        return "noItems";
     }
 
 }
