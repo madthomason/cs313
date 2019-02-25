@@ -21,15 +21,13 @@ if (isset($_GET["id"])) {
             $updateItemsStmt->bindParam(":id", $_GET["id"], PDO::PARAM_INT);
             $updateItemsStmt->execute();
             //$msg = emailNotifications($_SESSION["user"], $db);
-            $email = new \SendGrid\Mail();
-            $email->addTo($_SESSION["user"]["email"])
-                ->setFrom("tho16031@byui.edu")
-                ->setSubject("Hello World from the SendGrid PHP Library!")
-                ->setText("Hello, Email!");
+            $email = new \SendGrid\Mail("tho16031@byui.edu", "Hello World from the SendGrid PHP Library!",
+                $_SESSION["user"]["email"], "Hello, Email!");
+
 
             $sg = new \SendGrid(getenv('SENDGRID_API_KEY'));
 
-            $response = $sg->send($email);
+            $response = $sg->client->mail()->send()->post($email);
             if (!isset($response)) {
                 $msg = "notSent";
             }
