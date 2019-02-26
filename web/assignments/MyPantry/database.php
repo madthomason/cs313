@@ -157,5 +157,8 @@ function emailNotifications($user, $db) {
 
         return $msg;
     }
+    else {
+        return "empty";
+    }
 }
 
