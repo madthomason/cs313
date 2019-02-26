@@ -148,19 +148,14 @@ function emailNotifications($user, $db) {
             $msg .= $item["name"] . " - " . $item["quantity"] . " " . $quantity_types[$item["quantity_type"]] . "\r\n";
         }
 
-        // use wordwrap() if lines are longer than 70 characters
-        $msg = wordwrap($msg,70, '\r\n');
-
-        // send email
-        $sent = mail($user["email"],"$count Items Need Restocking", $msg);
-        if (!$sent) {
-            return "notSent";
-        }
+        $msg .= "Please update them as necessary";
+        // send email -heroku does not allow-
+        //$msg = wordwrap($msg,70, '\r\n'); // use wordwrap() if lines are longer than 70 characters
+       // $sent = mail($user["email"],"$count Items Need Restocking", $msg);
 
         flagItemNotification($ids, $db);
-    } else {
-        return "noItems";
-    }
 
+        return $msg;
+    }
 }
 

@@ -7,11 +7,6 @@
  */
 require 'header.php';
 
-if(isset($_GET["msg"])){
-    $message = $_GET["msg"];
-    echo "<script type='text/javascript'>alert('$message');</script>";
-}
-
 if (isset($_SESSION["user"]) && !isset($_GET["cupboardId"])) {
     //Get the cupboards
     $_SESSION["cupboards"] = getCupboards($_SESSION["user"]["id"], $db);
@@ -40,6 +35,11 @@ $quantityTypes = getQuantityTypes();
 require 'itemModal.php';
 require 'cupboardModal.php';
 require 'updateCupboardModal.php';
+
+
+//Notify Users if their items are in need of restocking
+$message =  emailNotifications($_SESSION["user"], $db);
+echo "<script type='text/javascript'>alert('$message');</script>";
 ?>
 <nav class="navbar navbar-dark bg-dark">
     <div class="d-flex">
