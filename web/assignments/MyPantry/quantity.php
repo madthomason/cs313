@@ -7,6 +7,7 @@
  */
 require_once 'database.php';
 require("../../sendgrid-php/sendgrid-php/sendgrid-php.php");
+require('vendor/autoload.php');
 $db = getDb();
 session_start();
 $msg = "sent!";
