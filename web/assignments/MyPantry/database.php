@@ -136,10 +136,8 @@ function emailNotifications($user, $db) {
 
     $items = getItemsForRestock($user["id"], $db);
     if (!empty($items)){
-        $count = count($items);
         $quantity_types = getQuantityTypes();
         $ids = array();
-        $sent = false;
         // the message
         $msg = "The following items have reached your restock quantity: \n";
 
