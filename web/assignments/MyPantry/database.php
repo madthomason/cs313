@@ -143,7 +143,7 @@ function emailNotifications($user, $db) {
 
         foreach ($items as $item) {
             array_push($ids, $item["id"]);
-            $msg .= $item["name"] . " - " . $item["quantity"] . " " . $quantity_types[$item["quantity_type"]] . "\r\n";
+            $msg .= $item["name"] . " - " . $item["quantity"] . " " . $quantity_types[$item["quantity_type_id"]] . "\n";
         }
 
         $msg .= "Please update them as necessary";
