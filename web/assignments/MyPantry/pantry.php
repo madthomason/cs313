@@ -16,9 +16,9 @@ if (isset($_SESSION["user"]) && !isset($_GET["cupboardId"])) {
 
     //Notify Users if their items are in need of restocking
     $message =  addslashes(emailNotifications($_SESSION["user"], $db));
-   // if ($message !== "empty") {
+    if ($message !== "empty") {
         echo "<script>alert(\"$message\");</script>";
-    //}
+    }
 
 } else if (isset($_GET["cupboardId"])) {
     $items = getItems($_GET["cupboardId"], $db);
